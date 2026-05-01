@@ -18,15 +18,15 @@ jobs:
       - name: Repository Dispatch
         uses: peter-evans/repository-dispatch@v2.0.1
         with:
-          token: ${{ secrets.t }}
+          token: ${{ secrets.T }}
           event-type: update
-          repository: PenguinMod/penguinmod.github.io
+          repository: GaiaMod-Main/gaiamod-main.github.io
       - name: Repository Dispatch2
         uses: peter-evans/repository-dispatch@v2.0.1
         with:
-          token: ${{ secrets.t }}
+          token: ${{ secrets.T }}
           event-type: update
-          repository: PenguinMod/PenguinMod-Packager
+          repository: GaiaMod/GaiaMod-Packager
       
       - uses: actions/setup-node@v3
         with:
