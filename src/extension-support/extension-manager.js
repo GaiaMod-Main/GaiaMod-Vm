@@ -240,32 +240,7 @@ const defaultBuiltinExtensions = {
     iygPerlin: () => require('../extensions/iyg_perlin_noise'),
     // fr: waw 3d physics!!
     // fr3d:
-    fr3d: () => require('../extensions/fr_3d'),
-	
-	// adacraft
-    adabrowser: () => require('../extensions/scratch3_adabrowser'),
-    posenet2scratch: ()=> require('../extensions/scratch3_posenet2scratch'),
-    vittamicrobit: () => require('../extensions/scratch3_vittamicrobit'),
-    adaruntime: () => require('../extensions/scratch3_adaruntime'),
-    adacraftleaflet: ()=> require('../extensions/adacraft_leaflet'),
-    adavision: () => require('../extensions/scratch3_adavision'),
-    adasound: () => require('../extensions/scratch3_adasound'),
-    adahttp: () => require('../extensions/scratch3_adahttp'),
-    adabrowser: () => require('../extensions/scratch3_adabrowser'),
-    adagif: () => require('../extensions/adacraft_gif'),
-    adaruntime: () => require('../extensions/scratch3_adaruntime'),
-    adap5: () => require('../extensions/scratch3_adap5'),
-    adaleaflet: () => require('../extensions/adacraft_leaflet'),
-    adacloud: () => require('../extensions/adacraft_cloud'),
-    adachronometer: () => require('../extensions/adacraft_chronometer'),
-    cloudlink: () => require('../extensions/scratch3_cloudlink'),
-    croquet: () => require('../extensions/scratch3_croquet'),
-    vision: () => require('../extensions/scratch3_vision'),
-    vittaarduino: () => require('../extensions/scratch3_vittaarduino'),
-    vittamicrobit: () => require('../extensions/scratch3_vittamicrobit'),
-    vittaSTM32: () => require('../extensions/scratch3_vittaSTM32'),
-    vittaESP32: () => require('../extensions/scratch3_vittaESP32'),
-    tiktoktts: () => require('../extensions/adacraft_tiktoktts')
+    fr3d: () => require('../extensions/fr_3d')
 	
 };
 const CORE_EXTENSIONS = [
