@@ -290,7 +290,6 @@ const defaultBuiltinExtensions = {
     ml2scratch: () => require('../extensions/scratch3_ml2scratch'),
     tm2scratch: () => require('../extensions/scratch3_tm2scratch'),
     scratch2maqueen: () => require("../extensions/scratch3_scratch2maqueen"),
-    openai2scratch: () => require("../extensions/scratch3_openai2scratch"),
     chatgpt2scratch: () => require("../extensions/scratch3_chatgpt2scratch"),
     tmpose2scratch: () => require("../extensions/scratch3_tmpose2scratch"),
     roku: () => require("../extensions/scratch3_roku"),
@@ -306,8 +305,7 @@ const defaultBuiltinExtensions = {
     onegpioCpx: () => require('../extensions/scratch3_onegpioCpx'),
     onegpioRoboHAT: () => require('../extensions/scratch3_onegpioRoboHAT'),
     onegpioRpiPico: () => require('../extensions/scratch3_onegpioRpiPico'),
-	
-	
+		
      SPjavascriptV2: () => require("../extensions/sp_javascriptV2"),
     // Web server blocks from Omniblocks lol.
     server: () => require('../extensions/omni_server')
