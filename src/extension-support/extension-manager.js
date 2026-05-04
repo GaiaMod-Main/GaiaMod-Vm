@@ -308,9 +308,6 @@ const defaultBuiltinExtensions = {
     onegpioRoboHAT: () => require('../extensions/scratch3_onegpioRoboHAT'),
     onegpioRpiPico: () => require('../extensions/scratch3_onegpioRpiPico'),
 	
-	echidna: () => require('../extensions/scratch3_echidna'),
-
-	
      SPjavascriptV2: () => require("../extensions/sp_javascriptV2"),
     // Web server blocks from Omniblocks lol.
     server: () => require('../extensions/omni_server')
