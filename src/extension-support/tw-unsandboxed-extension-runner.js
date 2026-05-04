@@ -33,6 +33,7 @@ const setupUnsandboxedExtensionAPI = vm => new Promise(resolve => {
     Scratch.extensions = {
         unsandboxed: true,
         isPenguinMod: true,
+        isGaiaMod: true,
         register
     };
     Scratch.vm = vm;
@@ -160,7 +161,7 @@ const setupUnsandboxedExtensionAPI = vm => new Promise(resolve => {
 const teardownUnsandboxedExtensionAPI = () => {
     // We can assume global.Scratch already exists.
     global.Scratch.extensions.register = () => {
-        throw new Error('Too late to register new extensions.');
+        throw new Error('It\'s too late to register new extensions lol!');
     };
 };
 
