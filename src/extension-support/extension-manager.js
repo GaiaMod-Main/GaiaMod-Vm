@@ -240,23 +240,8 @@ const defaultBuiltinExtensions = {
     iygPerlin: () => require('../extensions/iyg_perlin_noise'),
     // fr: waw 3d physics!!
     // fr3d:
-    fr3d: () => require('../extensions/fr_3d'),
-		
-	// champierre
-    chatgpt2scratch: () => require("../extensions/scratch3_chatgpt2scratch"),
-    tmpose2scratch: () => require("../extensions/scratch3_tmpose2scratch"),
-    scratch2root: () => require("../extensions/scratch3_scratch2root"),
-    speech2scratch: () => require("../extensions/scratch3_speech2scratch"),
-    scratch2webserialapi: () => require("../extensions/scratch3_scratch2webserialapi"),
-    facemesh2scratch: () => require("../extensions/scratch3_facemesh2scratch"),
-    ic2scratch: () => require("../extensions/scratch3_ic2scratch"),
-    numberbank: () => require("../extensions/scratch3_numberbank"),
-    openai2scratch: () => require("../extensions/scratch3_openai2scratch"),
-    nn2scratch: () => require("../extensions/scratch3_nn2scratch"),
-    handpose2scratch: () => require("../extensions/scratch3_handpose2scratch"),
-    posenet2scratch: () => require('../extensions/scratch3_posenet2scratch'),
-    ml2scratch: () => require('../extensions/scratch3_ml2scratch'),
-    tm2scratch: () => require('../extensions/scratch3_tm2scratch')
+    fr3d: () => require('../extensions/fr_3d')
+	
 };
 const CORE_EXTENSIONS = [
     'argument',
