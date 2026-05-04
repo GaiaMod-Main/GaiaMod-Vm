@@ -242,6 +242,12 @@ const defaultBuiltinExtensions = {
     // fr3d:
     fr3d: () => require('../extensions/fr_3d')
 	
+
+
+	// Wooooooooooooooooow!
+	// Wooooooooooooooooow!
+	
+	
 };
 const CORE_EXTENSIONS = [
     'argument',
