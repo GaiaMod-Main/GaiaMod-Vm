@@ -265,39 +265,7 @@ const defaultBuiltinExtensions = {
     vittamicrobit: () => require('../extensions/scratch3_vittamicrobit'),
     vittaSTM32: () => require('../extensions/scratch3_vittaSTM32'),
     vittaESP32: () => require('../extensions/scratch3_vittaESP32'),
-    tiktoktts: () => require('../extensions/adacraft_tiktoktts'),
-
-	// snail ide
-    snailextras: () => require('../extensions/snail_extras'),
-    goofiestExt: () => require('../extensions/scratch3_goofy'),
-    blockly2math: () => require('../extensions/blockly-2/math.js'),
-    // GvbvdxxMod2
-    beepboxsynth: () => require('../extensions/scratch3_beepbox_synth'),
-    // Cognimates
-    typescratch: () => require('../extensions/typescratch'),
-	
-// e
-
-    Scratch3WirelessBlocks: () => require('../extensions/scratch3_wireless'),
-    nmsderpMap: () => require('../extensions/nmsderp_maps'),
-    generateQRCode: () => require('../extensions/qrcode_ext'),
-    pythonExtension: () => require("../extensions/nmsderp_python"),
-    ic2scratch: () => require("../extensions/scratch3_ic2scratch"),
-    threeAxisAccelerometer: () => require("../extensions/scratch3_3axis"),
-    facemesh2scratch: () => require("../extensions/scratch3_facemesh2scratch"),
-    handpose2scratch: () => require("../extensions/scratch3_handpose2scratch"),
-    posenet2scratch: () => require('../extensions/scratch3_posenet2scratch'),
-    ml2scratch: () => require('../extensions/scratch3_ml2scratch'),
-    tm2scratch: () => require('../extensions/scratch3_tm2scratch'),
-    scratch2maqueen: () => require("../extensions/scratch3_scratch2maqueen"),
-    chatgpt2scratch: () => require("../extensions/scratch3_chatgpt2scratch"),
-    tmpose2scratch: () => require("../extensions/scratch3_tmpose2scratch"),
-    roku: () => require("../extensions/scratch3_roku"),
-    scratch2root: () => require("../extensions/scratch3_scratch2root"),
-    speech2scratch: () => require("../extensions/scratch3_speech2scratch"),
-    nesemulator: () => require("../extensions/nes"),
-    scratch2webserialapi: () => require("../extensions/scratch2webserialapi")
-	
+    tiktoktts: () => require('../extensions/adacraft_tiktoktts')
 	
 };
 const CORE_EXTENSIONS = [
