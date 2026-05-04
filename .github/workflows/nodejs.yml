@@ -5,6 +5,10 @@ on:
   push:
     branches: ["develop"]
 
+permissions:
+  contents: read
+  id-token: write
+
 jobs:
   ping-pong:
     runs-on: ubuntu-latest
@@ -13,14 +17,12 @@ jobs:
         uses: peter-evans/repository-dispatch@v2.0.1
         with:
           token: ${{ secrets.T }}
-          id-token: write
           event-type: update
           repository: GaiaMod-Main/gaiamod-main.github.io
       - name: Repository Dispatch2
         uses: peter-evans/repository-dispatch@v2.0.1
         with:
           token: ${{ secrets.T }}
-          id-token: write
           event-type: update
           repository: GaiaMod-Main/GaiaMod-Packager
       
