@@ -304,7 +304,6 @@ const defaultBuiltinExtensions = {
     onegpioPicoboard: () => require('../extensions/scratch3_onegpioPicoboard'),
     onegpioCpx: () => require('../extensions/scratch3_onegpioCpx'),
     onegpioRoboHAT: () => require('../extensions/scratch3_onegpioRoboHAT'),
-    onegpioRpiPico: () => require('../extensions/scratch3_onegpioRpiPico'),
 		
      SPjavascriptV2: () => require("../extensions/sp_javascriptV2"),
     // Web server blocks from Omniblocks lol.
