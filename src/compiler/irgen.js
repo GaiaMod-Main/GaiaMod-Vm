@@ -847,6 +847,10 @@ class ScriptTreeGenerator {
                 kind: 'sensing.touching',
                 object: this.descendInputOfBlock(block, 'TOUCHINGOBJECTMENU')
             };
+       case 'sensing_online':
+            return {
+                kind: 'sensing.online'
+            };
         case 'sensing_username':
             return {
                 kind: 'sensing.username'

@@ -81,6 +81,7 @@ class Scratch3SensingBlocks {
             sensing_loud: this.isLoud,
             sensing_askandwait: this.askAndWait,
             sensing_answer: this.getAnswer,
+            sensing_online: this.isOnline,
             sensing_username: this.getUsername,
             sensing_loggedin: this.getLoggedIn,
             sensing_userid: () => {}, // legacy no-op block
@@ -647,6 +648,16 @@ class Scratch3SensingBlocks {
 
         // Otherwise, 0
         return 0;
+    }
+	
+ isOnline () {
+        const status = window.navigator.onLine;
+        if (typeof status === 'boolean') {
+            return status;
+        }
+        // an empty string will evaluate as false in a Boolean context,
+        // but it allows distinguishing between "false" and "unknown" if needed
+        return '';
     }
 
     getUsername (args, util) {
