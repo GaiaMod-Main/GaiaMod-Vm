@@ -310,9 +310,6 @@ const defaultBuiltinExtensions = {
     onegpioRpiPico: () => require('../extensions/scratch3_onegpioRpiPico'),
 	
 	echidna: () => require('../extensions/scratch3_echidna'),
-    learningmlTexts: () => require('../extensions/scratch3_learningml_texts'),
-    learningmlImages: () => require('../extensions/scratch3_learningml_images'),
-    learningmlNumerical: () => require('../extensions/scratch3_learningml_numerical'),
 
 	
      SPjavascriptV2: () => require("../extensions/sp_javascriptV2"),
