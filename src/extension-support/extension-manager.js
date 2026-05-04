@@ -308,8 +308,6 @@ const defaultBuiltinExtensions = {
     onegpioCpx: () => require('../extensions/scratch3_onegpioCpx'),
     onegpioRoboHAT: () => require('../extensions/scratch3_onegpioRoboHAT'),
     onegpioRpiPico: () => require('../extensions/scratch3_onegpioRpiPico'),
-
-    em_discordrpc: () => require('../extensions/em_discordrpc'),
 	
 	echidna: () => require('../extensions/scratch3_echidna'),
     learningmlTexts: () => require('../extensions/scratch3_learningml_texts'),
