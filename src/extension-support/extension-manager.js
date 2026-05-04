@@ -297,7 +297,6 @@ const defaultBuiltinExtensions = {
     scratch2root: () => require("../extensions/scratch3_scratch2root"),
     speech2scratch: () => require("../extensions/scratch3_speech2scratch"),
     nesemulator: () => require("../extensions/nes"),
-    sweetalert2: () => require("../extensions/scratch3_sweetalert"),
     scratch2webserialapi: () => require("../extensions/scratch2webserialapi"),
 	
     onegpioArduino: () => require('../extensions/scratch3_onegpioArduino'),
