@@ -241,7 +241,7 @@ const defaultBuiltinExtensions = {
     // fr: waw 3d physics!!
     // fr3d:
     fr3d: () => require('../extensions/fr_3d'),
-	
+		
 	// champierre
     chatgpt2scratch: () => require("../extensions/scratch3_chatgpt2scratch"),
     tmpose2scratch: () => require("../extensions/scratch3_tmpose2scratch"),
@@ -257,7 +257,6 @@ const defaultBuiltinExtensions = {
     posenet2scratch: () => require('../extensions/scratch3_posenet2scratch'),
     ml2scratch: () => require('../extensions/scratch3_ml2scratch'),
     tm2scratch: () => require('../extensions/scratch3_tm2scratch')
-	
 };
 const CORE_EXTENSIONS = [
     'argument',
