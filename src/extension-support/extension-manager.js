@@ -311,6 +311,12 @@ const defaultBuiltinExtensions = {
 
     em_discordrpc: () => require('../extensions/em_discordrpc'),
 	
+	echidna: () => require('../extensions/scratch3_echidna'),
+    learningmlTexts: () => require('../extensions/scratch3_learningml_texts'),
+    learningmlImages: () => require('../extensions/scratch3_learningml_images'),
+    learningmlNumerical: () => require('../extensions/scratch3_learningml_numerical'),
+
+	
      SPjavascriptV2: () => require("../extensions/sp_javascriptV2"),
     // Web server blocks from Omniblocks lol.
     server: () => require('../extensions/omni_server')
