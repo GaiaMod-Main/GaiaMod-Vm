@@ -20,7 +20,7 @@ jobs:
         with:
           token: ${{ secrets.T }}
           event-type: update
-          repository: GaiaMod/GaiaMod-Packager
+          repository: GaiaMod-Main/GaiaMod-Packager
       
       - uses: actions/setup-node@v3
         with:
