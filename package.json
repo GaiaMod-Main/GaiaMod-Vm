@@ -86,7 +86,7 @@
     "lodash.defaultsdeep": "4.6.1",
     "pngjs": "3.3.3",
     "scratch-audio": "0.1.0-prerelease.20200528195344",
-    "scratch-blocks": "git+https://github.com/PenguinMod/PenguinMod-Blocks.git#develop-builds",
+    "scratch-blocks": "git+https://github.com/GaiaMod-Main/GaiaMod-Blocks.git#develop-builds",
     "scratch-l10n": "3.14.20220526031602",
     "scratch-render": "github:PenguinMod/penguinmod-render#develop",
     "scratch-render-fonts": "github:PenguinMod/penguinmod-render-fonts#master",
