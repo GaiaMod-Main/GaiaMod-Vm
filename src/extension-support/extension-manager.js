@@ -241,6 +241,84 @@ const defaultBuiltinExtensions = {
     // fr: waw 3d physics!!
     // fr3d:
     fr3d: () => require('../extensions/fr_3d')
+	
+	// adacraft
+    adabrowser: () => require('../extensions/scratch3_adabrowser'),
+    posenet2scratch: ()=> require('../extensions/scratch3_posenet2scratch'),
+    vittamicrobit: () => require('../extensions/scratch3_vittamicrobit'),
+    adaruntime: () => require('../extensions/scratch3_adaruntime'),
+    adacraftleaflet: ()=> require('../extensions/adacraft_leaflet'),
+    adavision: () => require('../extensions/scratch3_adavision'),
+    adasound: () => require('../extensions/scratch3_adasound'),
+    adahttp: () => require('../extensions/scratch3_adahttp'),
+    adabrowser: () => require('../extensions/scratch3_adabrowser'),
+    adagif: () => require('../extensions/adacraft_gif'),
+    adaruntime: () => require('../extensions/scratch3_adaruntime'),
+    adap5: () => require('../extensions/scratch3_adap5'),
+    adaleaflet: () => require('../extensions/adacraft_leaflet'),
+    adacloud: () => require('../extensions/adacraft_cloud'),
+    adachronometer: () => require('../extensions/adacraft_chronometer'),
+    cloudlink: () => require('../extensions/scratch3_cloudlink'),
+    croquet: () => require('../extensions/scratch3_croquet'),
+    vision: () => require('../extensions/scratch3_vision'),
+    vittaarduino: () => require('../extensions/scratch3_vittaarduino'),
+    vittamicrobit: () => require('../extensions/scratch3_vittamicrobit'),
+    vittaSTM32: () => require('../extensions/scratch3_vittaSTM32'),
+    vittaESP32: () => require('../extensions/scratch3_vittaESP32'),
+    tiktoktts: () => require('../extensions/adacraft_tiktoktts'),
+
+	// snail ide
+    snailextras: () => require('../extensions/snail_extras'),
+    goofiestExt: () => require('../extensions/scratch3_goofy'),
+    blockly2math: () => require('../extensions/blockly-2/math.js'),
+    // GvbvdxxMod2
+    beepboxsynth: () => require('../extensions/scratch3_beepbox_synth'),
+    // Cognimates
+    typescratch: () => require('../extensions/typescratch'),
+	
+// e
+
+    Scratch3WirelessBlocks: () => require('../extensions/scratch3_wireless'),
+    nmsderpMap: () => require('../extensions/nmsderp_maps'),
+    generateQRCode: () => require('../extensions/qrcode_ext'),
+    pythonExtension: () => require("../extensions/nmsderp_python"),
+    ic2scratch: () => require("../extensions/scratch3_ic2scratch"),
+    threeAxisAccelerometer: () => require("../extensions/scratch3_3axis"),
+    facemesh2scratch: () => require("../extensions/scratch3_facemesh2scratch"),
+    handpose2scratch: () => require("../extensions/scratch3_handpose2scratch"),
+    posenet2scratch: () => require('../extensions/scratch3_posenet2scratch'),
+    ml2scratch: () => require('../extensions/scratch3_ml2scratch'),
+    tm2scratch: () => require('../extensions/scratch3_tm2scratch'),
+    scratch2maqueen: () => require("../extensions/scratch3_scratch2maqueen"),
+    openai2scratch: () => require("../extensions/scratch3_openai2scratch"),
+    chatgpt2scratch: () => require("../extensions/scratch3_chatgpt2scratch"),
+    tmpose2scratch: () => require("../extensions/scratch3_tmpose2scratch"),
+    roku: () => require("../extensions/scratch3_roku"),
+    scratch2root: () => require("../extensions/scratch3_scratch2root"),
+    speech2scratch: () => require("../extensions/scratch3_speech2scratch"),
+    nesemulator: () => require("../extensions/nes"),
+    shareExt: () => require("../extensions/scratch3_share"),
+    sweetalert2: () => require("../extensions/scratch3_sweetalert"),
+    scratch2webserialapi: () => require("../extensions/scratch2webserialapi")
+	
+    onegpioArduino: () => require('../extensions/scratch3_onegpioArduino'),
+    onegpioRpi: () => require('../extensions/scratch3_onegpioRpi'),
+    onegpioEsp: () => require('../extensions/scratch3_onegpioEsp'),
+    onegpioPicoboard: () => require('../extensions/scratch3_onegpioPicoboard'),
+    onegpioCpx: () => require('../extensions/scratch3_onegpioCpx'),
+    onegpioRoboHAT: () => require('../extensions/scratch3_onegpioRoboHAT'),
+    onegpioRpiPico: () => require('../extensions/scratch3_onegpioRpiPico'),
+
+    em_discordrpc: () => require('../extensions/em_discordrpc'),
+	
+     SPjavascriptV2: () => require("../extensions/sp_javascriptV2"),
+    // Web server blocks from Omniblocks lol.
+    server: () => require('../extensions/omni_server'),
+
+	// Wooooooooooooooooow!
+	// Wooooooooooooooooow!
+	
+	
 };
 const CORE_EXTENSIONS = [
     'argument',
