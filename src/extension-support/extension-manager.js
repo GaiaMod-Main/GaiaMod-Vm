@@ -240,7 +240,7 @@ const defaultBuiltinExtensions = {
     iygPerlin: () => require('../extensions/iyg_perlin_noise'),
     // fr: waw 3d physics!!
     // fr3d:
-    fr3d: () => require('../extensions/fr_3d')
+    fr3d: () => require('../extensions/fr_3d'),
 	
 	// adacraft
     adabrowser: () => require('../extensions/scratch3_adabrowser'),
@@ -299,7 +299,7 @@ const defaultBuiltinExtensions = {
     nesemulator: () => require("../extensions/nes"),
     shareExt: () => require("../extensions/scratch3_share"),
     sweetalert2: () => require("../extensions/scratch3_sweetalert"),
-    scratch2webserialapi: () => require("../extensions/scratch2webserialapi")
+    scratch2webserialapi: () => require("../extensions/scratch2webserialapi"),
 	
     onegpioArduino: () => require('../extensions/scratch3_onegpioArduino'),
     onegpioRpi: () => require('../extensions/scratch3_onegpioRpi'),
@@ -313,7 +313,7 @@ const defaultBuiltinExtensions = {
 	
      SPjavascriptV2: () => require("../extensions/sp_javascriptV2"),
     // Web server blocks from Omniblocks lol.
-    server: () => require('../extensions/omni_server'),
+    server: () => require('../extensions/omni_server')
 
 	// Wooooooooooooooooow!
 	// Wooooooooooooooooow!
