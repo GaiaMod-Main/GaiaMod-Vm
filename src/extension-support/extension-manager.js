@@ -296,21 +296,7 @@ const defaultBuiltinExtensions = {
     scratch2root: () => require("../extensions/scratch3_scratch2root"),
     speech2scratch: () => require("../extensions/scratch3_speech2scratch"),
     nesemulator: () => require("../extensions/nes"),
-    scratch2webserialapi: () => require("../extensions/scratch2webserialapi"),
-	
-    onegpioArduino: () => require('../extensions/scratch3_onegpioArduino'),
-    onegpioRpi: () => require('../extensions/scratch3_onegpioRpi'),
-    onegpioEsp: () => require('../extensions/scratch3_onegpioEsp'),
-    onegpioPicoboard: () => require('../extensions/scratch3_onegpioPicoboard'),
-    onegpioCpx: () => require('../extensions/scratch3_onegpioCpx'),
-    onegpioRoboHAT: () => require('../extensions/scratch3_onegpioRoboHAT'),
-		
-     SPjavascriptV2: () => require("../extensions/sp_javascriptV2"),
-    // Web server blocks from Omniblocks lol.
-    server: () => require('../extensions/omni_server')
-
-	// Wooooooooooooooooow!
-	// Wooooooooooooooooow!
+    scratch2webserialapi: () => require("../extensions/scratch2webserialapi")
 	
 	
 };
