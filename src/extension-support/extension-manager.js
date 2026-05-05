@@ -267,7 +267,6 @@ const defaultBuiltinExtensions = {
     adap5: () => require('../extensions/scratch3_adap5'),
     adacloud: () => require('../extensions/adacraft_cloud'),
     adachronometer: () => require('../extensions/adacraft_chronometer'),
-    cloudlink: () => require('../extensions/scratch3_cloudlink'),
     croquet: () => require('../extensions/scratch3_croquet'),
 
     // snail ide
