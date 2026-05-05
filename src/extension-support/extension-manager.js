@@ -255,19 +255,19 @@ const defaultBuiltinExtensions = {
 	
 	    // adacraft
     adabrowser: () => require('../extensions/scratch3_adabrowser'),
-    adaruntime: () => require('../extensions/scratch3_adaruntime'),
     adacraftleaflet: ()=> require('../extensions/adacraft_leaflet'),
-    tiktoktts: () => require('../extensions/adacraft_tiktoktts'),
-    adavision: () => require('../extensions/scratch3_adavision'),
-    adasound: () => require('../extensions/scratch3_adasound'),
-    adahttp: () => require('../extensions/scratch3_adahttp'),
-    adabrowser: () => require('../extensions/scratch3_adabrowser'),
-    adagif: () => require('../extensions/adacraft_gif'),
-    adaruntime: () => require('../extensions/scratch3_adaruntime'),
-    adap5: () => require('../extensions/scratch3_adap5'),
-    adacloud: () => require('../extensions/adacraft_cloud'),
-    adachronometer: () => require('../extensions/adacraft_chronometer'),
-    croquet: () => require('../extensions/scratch3_croquet'),
+    //tiktoktts: () => require('../extensions/adacraft_tiktoktts'),
+    //adavision: () => require('../extensions/scratch3_adavision'),
+    //adasound: () => require('../extensions/scratch3_adasound'),
+    //adahttp: () => require('../extensions/scratch3_adahttp'),
+    //adagif: () => require('../extensions/adacraft_gif'),
+    //adaruntime: () => require('../extensions/scratch3_adaruntime'),
+    //adap5: () => require('../extensions/scratch3_adap5'),
+    //adacloud: () => require('../extensions/adacraft_cloud'),
+    //adachronometer: () => require('../extensions/adacraft_chronometer'),
+    //croquet: () => require('../extensions/scratch3_croquet'),
+	
+    //em_discordrpc: () => require('../extensions/em_discordrpc'),
 
     // snail ide
     snailextras: () => require('../extensions/snail_extras'),
@@ -281,7 +281,6 @@ const defaultBuiltinExtensions = {
     // e
     Scratch3WirelessBlocks: () => require('../extensions/scratch3_wireless'),
     nmsderpMap: () => require('../extensions/nmsderp_maps'),
-    adaleaflet: () => require('../extensions/adacraft_leaflet'),
     pythonExtension: () => require("../extensions/nmsderp_python"),
     threeAxisAccelerometer: () => require("../extensions/scratch3_3axis"),
     scratch2maqueen: () => require("../extensions/scratch3_scratch2maqueen"),
@@ -295,9 +294,7 @@ const defaultBuiltinExtensions = {
     onegpioPicoboard: () => require('../extensions/scratch3_onegpioPicoboard'),
     onegpioCpx: () => require('../extensions/scratch3_onegpioCpx'),
     onegpioRoboHAT: () => require('../extensions/scratch3_onegpioRoboHAT'),
-    onegpioRpiPico: () => require('../extensions/scratch3_onegpioRpiPico'),
-
-    em_discordrpc: () => require('../extensions/em_discordrpc')	
+    onegpioRpiPico: () => require('../extensions/scratch3_onegpioRpiPico')
 	
 };
 const CORE_EXTENSIONS = [
