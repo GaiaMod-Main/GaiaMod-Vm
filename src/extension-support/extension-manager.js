@@ -49,21 +49,6 @@ const defaultBuiltinExtensions = {
     // twFiles: replaces jgFiles as it works better on other devices
     twFiles: () => require('../extensions/tw_files'),
 	
-		// champierre
-    chatgpt2scratch: () => require("../extensions/scratch3_chatgpt2scratch"),
-    tmpose2scratch: () => require("../extensions/scratch3_tmpose2scratch"),
-    scratch2root: () => require("../extensions/scratch3_scratch2root"),
-    speech2scratch: () => require("../extensions/scratch3_speech2scratch"),
-    scratch2webserialapi: () => require("../extensions/scratch3_scratch2webserialapi"),
-    facemesh2scratch: () => require("../extensions/scratch3_facemesh2scratch"),
-    ic2scratch: () => require("../extensions/scratch3_ic2scratch"),
-    numberbank: () => require("../extensions/scratch3_numberbank"),
-    openai2scratch: () => require("../extensions/scratch3_openai2scratch"),
-    nn2scratch: () => require("../extensions/scratch3_nn2scratch"),
-    handpose2scratch: () => require("../extensions/scratch3_handpose2scratch"),
-    posenet2scratch: () => require('../extensions/scratch3_posenet2scratch'),
-    ml2scratch: () => require('../extensions/scratch3_ml2scratch'),
-    tm2scratch: () => require('../extensions/scratch3_tm2scratch'),
 
     // pm: category expansions & seperations go here
     // pmMotionExpansion: extra motion blocks that were in the category & new ones that werent
