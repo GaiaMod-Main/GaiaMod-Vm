@@ -76,7 +76,7 @@
     "tone": "^14.7.77",
 	"typescript": "^5.3.3",
 	"uuid": "8.3.2",
-    "worker-loader": "^1.1.1"
+    "worker-loader": "^1.1.1",
 	"yargs": "^18.0.0"
   },
   "peerDependencies": {
