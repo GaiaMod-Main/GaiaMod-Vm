@@ -259,7 +259,8 @@ const defaultBuiltinExtensions = {
     fr3d: () => require('../extensions/fr_3d'),
 	
 		// champierre
-    scratch2webserialapi: () => require("../extensions/scratch3_scratch2webserialapi")
+    scratch2webserialapi: () => require("../extensions/scratch3_scratch2webserialapi"),
+    chatgpt2scratch: () => require("../extensions/scratch3_chatgpt2scratch")
 		
 	
 };
