@@ -90,7 +90,7 @@
     "scratch-l10n": "3.14.20220526031602",
     "scratch-render": "github:PenguinMod/penguinmod-render#develop",
     "scratch-render-fonts": "github:PenguinMod/penguinmod-render-fonts#master",
-    "scratch-storage": "git+https://github.com/PenguinMod/PenguinMod-Storage.git#develop",
+    "scratch-storage": "git+https://github.com/GaiaMod-Main/GaiaMod-Storage.git#develop",
     "scratch-svg-renderer": "github:PenguinMod/penguinmod-svg-renderer#develop",
     "script-loader": "0.7.2",
     "stats.js": "0.17.0",
