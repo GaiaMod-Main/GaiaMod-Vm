@@ -284,7 +284,6 @@ const defaultBuiltinExtensions = {
     Scratch3WirelessBlocks: () => require('../extensions/scratch3_wireless'),
     nmsderpMap: () => require('../extensions/nmsderp_maps'),
     adaleaflet: () => require('../extensions/adacraft_leaflet'),
-    generateQRCode: () => require('../extensions/qrcode_ext'),
     pythonExtension: () => require("../extensions/nmsderp_python"),
     threeAxisAccelerometer: () => require("../extensions/scratch3_3axis"),
     scratch2maqueen: () => require("../extensions/scratch3_scratch2maqueen"),
