@@ -279,7 +279,6 @@ const defaultBuiltinExtensions = {
     typescratch: () => require('../extensions/typescratch'),
 
     // e
-	echidna: () => require('../extensions/scratch3_echidna'),
     Scratch3WirelessBlocks: () => require('../extensions/scratch3_wireless'),
     nmsderpMap: () => require('../extensions/nmsderp_maps'),
     adaleaflet: () => require('../extensions/adacraft_leaflet'),
