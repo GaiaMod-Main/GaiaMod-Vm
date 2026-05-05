@@ -36,7 +36,7 @@ const TONE = 5;
 const SONAR = 6;
 const ANALOG_INPUT = 7;
 
-require('sweetalert');
+require('sweetalert2');
 
 // an array to save the current pin mode
 // this is common to all board types since it contains enough

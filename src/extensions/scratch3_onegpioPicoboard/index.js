@@ -24,7 +24,7 @@ const ArgumentType = require('../../extension-support/argument-type');
 const BlockType = require('../../extension-support/block-type');
 const formatMessage = require('format-message');
 
-require('sweetalert');
+require('sweetalert2');
 
 let lastDataSample = [0, 0, 0, 0, 0, 0, 0, 0];
 

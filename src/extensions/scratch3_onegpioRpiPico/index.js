@@ -35,7 +35,7 @@ const SERVO = 4;
 const SONAR = 5;
 const ANALOG_INPUT = 6;
 
-require('sweetalert');
+require('sweetalert2');
 
 // an array to save the current pin mode
 // this is common to all board types since it contains enough
