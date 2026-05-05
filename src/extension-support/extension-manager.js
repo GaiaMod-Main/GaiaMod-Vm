@@ -244,7 +244,9 @@ const defaultBuiltinExtensions = {
 	
 		// champierre
     scratch2webserialapi: () => require("../extensions/scratch3_scratch2webserialapi"),
-    chatgpt2scratch: () => require("../extensions/scratch3_chatgpt2scratch")
+    chatgpt2scratch: () => require("../extensions/scratch3_chatgpt2scratch"),
+    facemesh2scratch: () => require("../extensions/scratch3_facemesh2scratch"),
+    handpose2scratch: () => require("../extensions/scratch3_handpose2scratch")
 		
 	
 };
