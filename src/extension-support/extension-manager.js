@@ -251,8 +251,56 @@ const defaultBuiltinExtensions = {
     speech2scratch: () => require("../extensions/scratch3_speech2scratch"),
     tm2scratch: () => require("../extensions/scratch3_tm2scratch"),
     tmpose2scratch: () => require("../extensions/scratch3_tmpose2scratch"),
-    ml2scratch: () => require("../extensions/scratch3_ml2scratch")
-		
+    ml2scratch: () => require("../extensions/scratch3_ml2scratch"),
+	
+	    // adacraft
+    adabrowser: () => require('../extensions/scratch3_adabrowser'),
+    adaruntime: () => require('../extensions/scratch3_adaruntime'),
+    adacraftleaflet: ()=> require('../extensions/adacraft_leaflet'),
+    tiktoktts: () => require('../extensions/adacraft_tiktoktts'),
+    adavision: () => require('../extensions/scratch3_adavision'),
+    adasound: () => require('../extensions/scratch3_adasound'),
+    adahttp: () => require('../extensions/scratch3_adahttp'),
+    adabrowser: () => require('../extensions/scratch3_adabrowser'),
+    adagif: () => require('../extensions/adacraft_gif'),
+    adaruntime: () => require('../extensions/scratch3_adaruntime'),
+    adap5: () => require('../extensions/scratch3_adap5'),
+    adacloud: () => require('../extensions/adacraft_cloud'),
+    adachronometer: () => require('../extensions/adacraft_chronometer'),
+    cloudlink: () => require('../extensions/scratch3_cloudlink'),
+    croquet: () => require('../extensions/scratch3_croquet'),
+
+    // snail ide
+    snailextras: () => require('../extensions/snail_extras'),
+    goofiestExt: () => require('../extensions/scratch3_goofy'),
+    blockly2math: () => require('../extensions/blockly-2/math.js'),
+    // GvbvdxxMod2
+    beepboxsynth: () => require('../extensions/scratch3_beepbox_synth'),
+    // Cognimates
+    typescratch: () => require('../extensions/typescratch'),
+
+    // e
+	echidna: () => require('../extensions/scratch3_echidna'),
+    Scratch3WirelessBlocks: () => require('../extensions/scratch3_wireless'),
+    nmsderpMap: () => require('../extensions/nmsderp_maps'),
+    adaleaflet: () => require('../extensions/adacraft_leaflet'),
+    generateQRCode: () => require('../extensions/qrcode_ext'),
+    pythonExtension: () => require("../extensions/nmsderp_python"),
+    threeAxisAccelerometer: () => require("../extensions/scratch3_3axis"),
+    scratch2maqueen: () => require("../extensions/scratch3_scratch2maqueen"),
+    roku: () => require("../extensions/scratch3_roku"),
+    nesemulator: () => require("../extensions/nes"),
+    shareExt: () => require("../extensions/scratch3_share"),
+    sweetalert2: () => require("../extensions/scratch3_sweetalert"),
+    onegpioArduino: () => require('../extensions/scratch3_onegpioArduino'),
+    onegpioRpi: () => require('../extensions/scratch3_onegpioRpi'),
+    onegpioEsp: () => require('../extensions/scratch3_onegpioEsp'),
+    onegpioPicoboard: () => require('../extensions/scratch3_onegpioPicoboard'),
+    onegpioCpx: () => require('../extensions/scratch3_onegpioCpx'),
+    onegpioRoboHAT: () => require('../extensions/scratch3_onegpioRoboHAT'),
+    onegpioRpiPico: () => require('../extensions/scratch3_onegpioRpiPico'),
+
+    em_discordrpc: () => require('../extensions/em_discordrpc')	
 	
 };
 const CORE_EXTENSIONS = [
