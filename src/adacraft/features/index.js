@@ -3,8 +3,8 @@ const environments = {
     ADACRAFT_ORG: Symbol()
 };
 
-const adacraftOrgConfig = require('./config/environments/adacraft-org');
-const vittascienceConfig = require('./config/environments/vittascience');
+import adacraftOrgConfig from './config/environments/adacraft-org';
+import vittascienceConfig from './config/environments/vittascience';
 const configs = {
     [environments.ADACRAFT_ORG]: adacraftOrgConfig,
     [environments.VITTASCIENCE]: vittascienceConfig
@@ -26,6 +26,17 @@ if (name !== undefined) {
     }
 }
 
-module.exports = {
+export default {
     config: configs[target],
+    decisions: {
+        stageHeaderIsAbove: target !== environments.VITTASCIENCE,
+        displayRestartAllButton: target === environments.VITTASCIENCE,
+        // Show turbo mode and frame rate with controls.
+        showExtraInfo: target !== environments.VITTASCIENCE,
+        allowGreenFlagWhileActive: target !== environments.VITTASCIENCE,
+        hideStageControls: target === environments.VITTASCIENCE,
+        showBrowserFullscreenControl: target !== environments.VITTASCIENCE,
+        noDefaultStorage: target === environments.VITTASCIENCE,
+        headerIsInFrontOfStageInFullscreen: target === environments.ADACRAFT_ORG
+    }
 };

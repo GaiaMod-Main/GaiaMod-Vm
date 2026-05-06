@@ -1,20 +1,11 @@
-const corsProxyBaseUrl = 'https://corsproxy.ogadaki.workers.dev';
-module.exports = {
-    extensions: {
-        adavision: {
-            constructorConfig: {
-                corsProxyBaseUrl
-            }
-        },
-        adasound: {
-            constructorConfig: {
-                corsProxyBaseUrl
-            }
-        },
-        adagif: {
-            constructorConfig: {
-                corsProxyBaseUrl
-            }
-        },
-    }
+import stage from './gui/stage'
+import stageWrapper from './gui/stage-wrapper'
+import defaultProject from './default-project';
+
+export default {
+    gui: {
+        stage,
+        stageWrapper
+    },
+    defaultProject
 };
