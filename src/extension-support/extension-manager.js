@@ -271,7 +271,7 @@ const defaultBuiltinExtensions = {
     typescratch: () => require('../extensions/typescratch'),
 	
 	// um...
-    TextToxicity: () => require('../extensions/scratch3_text_toxicity'),
+    //TextToxicity: () => require('../extensions/scratch3_text_toxicity'),
 
     // e
     Scratch3WirelessBlocks: () => require('../extensions/scratch3_wireless'),
