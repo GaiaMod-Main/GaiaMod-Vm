@@ -271,7 +271,7 @@ const defaultBuiltinExtensions = {
     typescratch: () => require('../extensions/typescratch'),
 	
 	// um...
-    ScratchAlexa: () => require('../extensions/scratch3_alexa'),
+    //ScratchAlexa: () => require('../extensions/scratch3_alexa'),
 
     // e
     Scratch3WirelessBlocks: () => require('../extensions/scratch3_wireless'),
