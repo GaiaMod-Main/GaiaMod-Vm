@@ -269,6 +269,9 @@ const defaultBuiltinExtensions = {
     beepboxsynth: () => require('../extensions/scratch3_beepbox_synth'),
     // Cognimates
     typescratch: () => require('../extensions/typescratch'),
+	
+	// um...
+    ScratchAlexa: () => require('../extensions/scratch3_alexa'),
 
     // e
     Scratch3WirelessBlocks: () => require('../extensions/scratch3_wireless'),
