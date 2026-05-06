@@ -255,8 +255,8 @@ const defaultBuiltinExtensions = {
     ml2scratch: () => require("../extensions/scratch3_ml2scratch"),
 	
 	    // adacraft
-    //adabrowser: () => require('../extensions/scratch3_adabrowser'),
-    //adacraftleaflet: ()=> require('../extensions/adacraft_leaflet'),
+    adabrowser: () => require('../extensions/scratch3_adabrowser'),
+    adacraftleaflet: ()=> require('../extensions/adacraft_leaflet'),
     //tiktoktts: () => require('../extensions/adacraft_tiktoktts'),
     //adavision: () => require('../extensions/scratch3_adavision'),
     //adasound: () => require('../extensions/scratch3_adasound'),
@@ -268,7 +268,7 @@ const defaultBuiltinExtensions = {
     //adachronometer: () => require('../extensions/adacraft_chronometer'),
     //croquet: () => require('../extensions/scratch3_croquet'),
 	
-    //em_discordrpc: () => require('../extensions/em_discordrpc'),
+    em_discordrpc: () => require('../extensions/em_discordrpc'),
 
     // snail ide
     snailextras: () => require('../extensions/snail_extras'),
