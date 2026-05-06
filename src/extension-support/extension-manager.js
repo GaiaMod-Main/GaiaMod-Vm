@@ -247,6 +247,7 @@ const defaultBuiltinExtensions = {
     chatgpt2scratch: () => require("../extensions/scratch3_chatgpt2scratch"),
     facemesh2scratch: () => require("../extensions/scratch3_facemesh2scratch"),
     handpose2scratch: () => require("../extensions/scratch3_handpose2scratch"),
+    posenet2scratch: () => require("../extensions/scratch3_posenet2scratch"),
     ic2scratch: () => require("../extensions/scratch3_ic2scratch"),
     speech2scratch: () => require("../extensions/scratch3_speech2scratch"),
     tm2scratch: () => require("../extensions/scratch3_tm2scratch"),
