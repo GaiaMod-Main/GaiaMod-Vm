@@ -249,7 +249,6 @@ const defaultBuiltinExtensions = {
     facemesh2scratch: () => require("../extensions/scratch3_facemesh2scratch"),
     handpose2scratch: () => require("../extensions/scratch3_handpose2scratch"),
     posenet2scratch: () => require("../extensions/scratch3_posenet2scratch"),
-    openai2scratch: () => require("../extensions/scratch3_openai2scratch"),
     helloscratch: () => require("../extensions/scratch3_hello"),
     nn2scratch: () => require("../extensions/scratch3_nn2scratch"),
     scratch2root: () => require("../extensions/scratch3_scratch2root"),
