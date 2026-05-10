@@ -29,6 +29,7 @@
     "version": "json -f package.json -I -e \"this.repository.sha = '$(git log -n1 --pretty=format:%H)'\""
   },
   "dependencies": {
+    "@supabase/supabase": "^0.3.2",
     "@croquet/croquet": "^0.3.2",
     "@turbowarp/json": "^0.1.2",
     "@vernier/godirect": "1.5.0",
