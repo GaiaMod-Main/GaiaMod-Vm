@@ -269,7 +269,6 @@ const defaultBuiltinExtensions = {
     adasound: () => require('../extensions/scratch3_adasound'),
     adaruntime: () => require('../extensions/scratch3_adaruntime'),
     adap5: () => require('../extensions/scratch3_adap5'),
-    alexa: () => require('../extensions/scratch3_alexa'),
 	
     em_discordrpc: () => require('../extensions/em_discordrpc'),
     poweredUp: () => require('../extensions/scratch3_powered_up'),
