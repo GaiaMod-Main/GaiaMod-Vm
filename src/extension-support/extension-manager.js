@@ -252,7 +252,6 @@ const defaultBuiltinExtensions = {
     openai2scratch: () => require("../extensions/scratch3_openai2scratch"),
     helloscratch: () => require("../extensions/scratch3_hello"),
     nn2scratch: () => require("../extensions/scratch3_nn2scratch"),
-    numberbank: () => require("../extensions/scratch3_numberbank"),
     scratch2root: () => require("../extensions/scratch3_scratch2root"),
     ic2scratch: () => require("../extensions/scratch3_ic2scratch"),
     speech2scratch: () => require("../extensions/scratch3_speech2scratch"),
