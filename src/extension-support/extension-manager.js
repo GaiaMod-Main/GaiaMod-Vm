@@ -266,6 +266,7 @@ const defaultBuiltinExtensions = {
     chronometer: () => require('../extensions/adacraft_chronometer'),
     gif: () => require('../extensions/adacraft_gif'),
     adavision: () => require('../extensions/scratch3_adavision'),
+    adasound: () => require('../extensions/scratch3_adasound'),
 	
     em_discordrpc: () => require('../extensions/em_discordrpc'),
     poweredUp: () => require('../extensions/scratch3_powered_up'),
