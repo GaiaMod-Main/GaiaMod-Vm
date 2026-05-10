@@ -264,6 +264,7 @@ const defaultBuiltinExtensions = {
     croquet: () => require('../extensions/scratch3_croquet'),
     adahttp: () => require('../extensions/scratch3_adahttp'),
     chronometer: () => require('../extensions/adacraft_chronometer'),
+    adacloud: () => require('../extensions/adacraft_cloud'),
 	
     em_discordrpc: () => require('../extensions/em_discordrpc'),
     poweredUp: () => require('../extensions/scratch3_powered_up'),
