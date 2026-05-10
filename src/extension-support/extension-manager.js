@@ -262,6 +262,7 @@ const defaultBuiltinExtensions = {
     em_discordrpc: () => require('../extensions/em_discordrpc'),
     poweredUp: () => require('../extensions/scratch3_powered_up'),
     duploTrain: () => require('../extensions/scratch3_duplo_train'),
+    alexa: () => require('../extensions/scratch3_alexa'),
 
     // snail ide
     snailextras: () => require('../extensions/snail_extras'),
@@ -272,9 +273,6 @@ const defaultBuiltinExtensions = {
     // Cognimates
     typescratch: () => require('../extensions/typescratch'),
 	
-	// um...
-    //ScratchAlexa: () => require('../extensions/scratch3_alexa'),
-
     // e
     Scratch3WirelessBlocks: () => require('../extensions/scratch3_wireless'),
     nmsderpMap: () => require('../extensions/nmsderp_maps'),
