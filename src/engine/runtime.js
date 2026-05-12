@@ -2327,6 +2327,18 @@ class Runtime extends EventEmitter {
             this.peripheralExtensions[extensionId].scan();
         }
     }
+	
+	  /**
+     * Tell the specified extension to scan for a peripheral.
+     * @param {string} extensionId - the id of the extension.
+     */
+    manualAddPeripheral (extensionId) {
+        if (this.peripheralExtensions[extensionId]) {
+            this.peripheralExtensions[extensionId].add();
+        } else {
+            console.error('Could not find a registered extension ' + extensionId);
+        }
+    }
 
     /**
      * Connect to the extension's specified peripheral.

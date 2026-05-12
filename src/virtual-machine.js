@@ -675,6 +675,14 @@ class VirtualMachine extends EventEmitter {
     scanForPeripheral (extensionId) {
         this.runtime.scanForPeripheral(extensionId);
     }
+	
+	  /**
+     * Tell the specified extension to connect to a peripheral.
+     * @param {string} extensionId - the id of the extension.
+     */
+    manualAddPeripheral (extensionId) {
+        this.runtime.manualAddPeripheral(extensionId);
+    }
 
     /**
      * Connect to the extension's specified peripheral.
