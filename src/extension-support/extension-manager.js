@@ -273,6 +273,7 @@ const defaultBuiltinExtensions = {
     em_discordrpc: () => require('../extensions/em_discordrpc'),
     poweredUp: () => require('../extensions/scratch3_powered_up'),
     duploTrain: () => require('../extensions/scratch3_duplo_train'),
+    marty: () => require('../extensions/scratch3_marty'),
 
     // snail ide
     snailextras: () => require('../extensions/snail_extras'),
