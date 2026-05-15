@@ -284,6 +284,17 @@ const defaultBuiltinExtensions = {
     // Cognimates
     typescratch: () => require('../extensions/typescratch'),
 	
+	//v
+	//mesh: () => require('../extensions/scratch3_mesh'),
+    //meshV2: () => require('../extensions/scratch3_mesh_v2'),
+    //smalrubotS1: () => require('../extensions/scratch3_smalrubot_s1'),
+    //pr2Robot: () => require('../extensions/scratch3_pr2robot'),
+    //fetchRobot: () => require('../extensions/scratch3_fetchrobot'),
+    //spotRobot: () => require('../extensions/scratch3_spotrobot'),
+    //go1Robot: () => require('../extensions/scratch3_go1robot'),
+    pepperRobot: () => require('../extensions/scratch3_pepperrobot'),
+    //ros: () => require('../extensions/scratch3_ros'),
+	
     // e
     Scratch3WirelessBlocks: () => require('../extensions/scratch3_wireless'),
     nmsderpMap: () => require('../extensions/nmsderp_maps'),
