@@ -1,4 +1,4 @@
-// omni: Added server support.
+// gaia: Added server support.
 
 const formatMessage = require('format-message');
 const BlockType = require('../../extension-support/block-type');
@@ -24,7 +24,7 @@ const REQ_METHOD_LIST = [
 ];
 
 /**
- * omni: Blocks to provide the front-end for OmniBlocks server support.
+ * gaia: Blocks to provide the front-end for GaiaMod server support.
  * @constructor
  */
 class Server {
@@ -77,7 +77,7 @@ class Server {
                 {
                     opcode: 'whenPageIsRequested',
                     text: formatMessage({
-                        id: 'omni_server.blocks.whenPageIsRequested',
+                        id: 'gaia_server.blocks.whenPageIsRequested',
                         default: 'when page [PAGE] is requested',
                         description: 'Hat that executes the code under it when a certain page is requested.'
                     }),
@@ -93,7 +93,7 @@ class Server {
                 {
                     opcode: 'whenPageIsNotFound',
                     text: formatMessage({
-                        id: 'omni_server.blocks.whenPageIsNotFound',
+                        id: 'gaia_server.blocks.whenPageIsNotFound',
                         default: 'when page is not found',
                         description: 'Hat that executes the code under it when a certain page is not found.'
                     }),
@@ -104,7 +104,7 @@ class Server {
                 {
                     opcode: 'returnContent',
                     text: formatMessage({
-                        id: 'omni_server.blocks.returnContent',
+                        id: 'gaia_server.blocks.returnContent',
                         // eslint-disable-next-line max-len
                         default: 'return content [CONTENT] as [MIME] with the status [STATUS] and headers [EXTRA_HEADERS]',
                         description: 'Hat that executes the code under it when a certain page is requested.'
@@ -114,7 +114,7 @@ class Server {
                     arguments: {
                         CONTENT: {
                             type: ArgumentType.STRING,
-                            defaultValue: 'Hello OmniBlocks!'
+                            defaultValue: 'Hello GaiaMod!'
                         },
                         MIME: {
                             type: ArgumentType.STRING,
@@ -135,7 +135,7 @@ class Server {
                 {
                     opcode: 'returnRequest',
                     text: formatMessage({
-                        id: 'omni_server.blocks.returnRequest',
+                        id: 'gaia_server.blocks.returnRequest',
                         default: 'return content [CONTENT]',
                         description: 'Block that sends the requested HTTP response.'
                     }),
@@ -144,14 +144,14 @@ class Server {
                     arguments: {
                         CONTENT: {
                             type: ArgumentType.STRING,
-                            defaultValue: 'Hello OmniBlocks!'
+                            defaultValue: 'Hello GaiaMod!'
                         }
                     }
                 },
                 {
                     opcode: 'setMime',
                     text: formatMessage({
-                        id: 'omni_server.blocks.setMime',
+                        id: 'gaia_server.blocks.setMime',
                         default: 'set format to [MIME]',
                         description: 'Block that sets the sent MIME (a.k.a. format) to a MIME-type.'
                     }),
@@ -167,7 +167,7 @@ class Server {
                 {
                     opcode: 'setStatus',
                     text: formatMessage({
-                        id: 'omni_server.blocks.setStatus',
+                        id: 'gaia_server.blocks.setStatus',
                         default: 'set status to [STATUS]',
                         description: 'Block that sets a HTTP status.'
                     }),
@@ -182,7 +182,7 @@ class Server {
                 {
                     opcode: 'setHeaders',
                     text: formatMessage({
-                        id: 'omni_server.blocks.setHeaders',
+                        id: 'gaia_server.blocks.setHeaders',
                         default: 'set headers to [EXTRA_HEADERS]',
                         description: 'Block that sets HTTP headers.'
                     }),
@@ -198,7 +198,7 @@ class Server {
                 {
                     opcode: 'page',
                     text: formatMessage({
-                        id: 'omni_server.blocks.page',
+                        id: 'gaia_server.blocks.page',
                         default: 'page',
                         description: 'Block that returns the requested page URL.'
                     }),
@@ -208,7 +208,7 @@ class Server {
                 {
                     opcode: 'ipAddress',
                     text: formatMessage({
-                        id: 'omni_server.blocks.ipAddress',
+                        id: 'gaia_server.blocks.ipAddress',
                         default: 'ip address',
                         description: 'Block that returns the IP Address from the request.'
                     }),
@@ -218,7 +218,7 @@ class Server {
                 {
                     opcode: 'method',
                     text: formatMessage({
-                        id: 'omni_server.blocks.method',
+                        id: 'gaia_server.blocks.method',
                         default: 'request method',
                         description: 'Block that returns the request method.'
                     }),
@@ -228,7 +228,7 @@ class Server {
                 {
                     opcode: 'headers',
                     text: formatMessage({
-                        id: 'omni_server.blocks.headers',
+                        id: 'gaia_server.blocks.headers',
                         default: 'request headers',
                         description: 'Block that returns the request headers.'
                     }),
@@ -238,7 +238,7 @@ class Server {
                 {
                     opcode: 'data',
                     text: formatMessage({
-                        id: 'omni_server.blocks.data',
+                        id: 'gaia_server.blocks.data',
                         default: 'request data',
                         description: 'Block that returns the request data.'
                     }),
@@ -249,7 +249,7 @@ class Server {
                 {
                     opcode: 'checkMethod',
                     text: formatMessage({
-                        id: 'omni_server.blocks.checkMethod',
+                        id: 'gaia_server.blocks.checkMethod',
                         default: 'request method is [REQ_METHOD]?',
                         description: 'Block that checks the request method is equal to the selected request method.'
                     }),
@@ -266,7 +266,7 @@ class Server {
                 {
                     opcode: 'readFile',
                     text: formatMessage({
-                        id: 'omni_server.blocks.readFile',
+                        id: 'gaia_server.blocks.readFile',
                         default: 'read file from [PATH]',
                         description: 'Block that reads a file.'
                     }),
@@ -281,7 +281,7 @@ class Server {
                 {
                     opcode: 'writeFile',
                     text: formatMessage({
-                        id: 'omni_server.blocks.writeFile',
+                        id: 'gaia_server.blocks.writeFile',
                         default: 'write [CONTENT] to [PATH]',
                         description: 'Block that writes content to a file.'
                     }),
@@ -300,7 +300,7 @@ class Server {
                 {
                     opcode: 'fileAccessStatus',
                     text: formatMessage({
-                        id: 'omni_server.blocks.fileAccessStatus',
+                        id: 'gaia_server.blocks.fileAccessStatus',
                         default: 'failed to access file?',
                         description: 'Block that checks if the was an error while accessing a file.'
                     }),

@@ -298,6 +298,8 @@ const defaultBuiltinExtensions = {
     // e
     Scratch3WirelessBlocks: () => require('../extensions/scratch3_wireless'),
     nmsderpMap: () => require('../extensions/nmsderp_maps'),
+    server: () => require('../extensions/gaia_server'),
+    appmaker: () => require('../extensions/gaia_appmaker'),
     pythonExtension: () => require("../extensions/nmsderp_python"),
     threeAxisAccelerometer: () => require("../extensions/scratch3_3axis"),
     scratch2maqueen: () => require("../extensions/scratch3_scratch2maqueen"),
