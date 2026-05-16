@@ -294,11 +294,11 @@ const defaultBuiltinExtensions = {
     //go1Robot: () => require('../extensions/scratch3_go1robot'),
     //pepperRobot: () => require('../extensions/scratch3_pepperrobot'),
     //ros: () => require('../extensions/scratch3_ros'),
+	//server: () => require('../extensions/gaia_server'),
 	
     // e
     Scratch3WirelessBlocks: () => require('../extensions/scratch3_wireless'),
     nmsderpMap: () => require('../extensions/nmsderp_maps'),
-    //server: () => require('../extensions/gaia_server'),
     appmaker: () => require('../extensions/gaia_appmaker'),
     pythonExtension: () => require("../extensions/nmsderp_python"),
     threeAxisAccelerometer: () => require("../extensions/scratch3_3axis"),
