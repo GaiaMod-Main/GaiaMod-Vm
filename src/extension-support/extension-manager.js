@@ -307,6 +307,7 @@ const defaultBuiltinExtensions = {
     nesemulator: () => require("../extensions/nes"),
     shareExt: () => require("../extensions/scratch3_share"),
     sweetalert2: () => require("../extensions/scratch3_sweetalert"),
+    poppy: () => require('../extensions/scratch3_poppy'),
     onegpioArduino: () => require('../extensions/scratch3_onegpioArduino'),
     onegpioRpi: () => require('../extensions/scratch3_onegpioRpi'),
     onegpioEsp: () => require('../extensions/scratch3_onegpioEsp'),
