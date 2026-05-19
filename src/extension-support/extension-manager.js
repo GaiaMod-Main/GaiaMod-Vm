@@ -283,7 +283,23 @@ const defaultBuiltinExtensions = {
     beepboxsynth: () => require('../extensions/scratch3_beepbox_synth'),
     // Cognimates
     typescratch: () => require('../extensions/typescratch'),
-	
+    //alexa: () => require('../extensions/scratch3_alexa'),
+    //jibo: () => require('../extensions/scratch3_jibo'),
+    //cognimate: () => require('../extensions/scratch3_cognimate'),
+    //sentiment: () => require('../extensions/scratch3_sentiment'),
+    //cozmo: () => require('../extensions/scratch3_cozmo'),
+    //hue: () => require('../extensions/scratch3_hue'),
+    //wemo: () => require('../extensions/scratch3_wemo'),
+    //clarifai: () => require('../extensions/scratch3_clarifai'),
+    //ergo: () => require('../extensions/scratch3_ergo'),
+    //circuit: () => require('../extensions/scratch3_circuit'),
+    //tracking: () => require('../extensions/scratch3_tracking'),
+    //watson: () => require('../extensions/scratch3_watson'),
+    //watson_nlc: () => require('../extensions/scratch3_watson_nlc'),
+    //speech: () => require('../extensions/scratch3_speech'),
+    //twitter: () => require('../extensions/scratch3_twitter'),
+    //muse: () => require('../extensions/scratch3_muse'),
+		
 	//v
 	//mesh: () => require('../extensions/scratch3_mesh'),
     //meshV2: () => require('../extensions/scratch3_mesh_v2'),
@@ -313,7 +329,7 @@ const defaultBuiltinExtensions = {
     onegpioPicoboard: () => require('../extensions/scratch3_onegpioPicoboard'),
     onegpioCpx: () => require('../extensions/scratch3_onegpioCpx'),
     onegpioRoboHAT: () => require('../extensions/scratch3_onegpioRoboHAT'),
-    onegpioRpiPico: () => require('../extensions/scratch3_onegpioRpiPico')
+    onegpioRpiPico: () => require('../extensions/scratch3_onegpioRpiPico'),
 	
 };
 const CORE_EXTENSIONS = [
