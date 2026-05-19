@@ -39,6 +39,7 @@
     "brain-text": "^1.1.30",
     "cannon-es": "0.20.0",
     "canvas-toBlob": "1.0.0",
+	"clarifai": "^2.6.0",
     "decode-html": "2.0.0",
     "diff-match-patch": "1.0.4",
 	"discord": "^0.8.2",
