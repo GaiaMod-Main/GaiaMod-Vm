@@ -103,7 +103,7 @@
     "worker-loader": "^1.1.1",
     "ws": "^3.3.3",
 	"xml2js": "^0.4.19",
-    "xmlbuilder": "^8.2.2",
+    "xmlbuilder": "^8.2.2"
 	"yargs": "^18.0.0"
   },
   "peerDependencies": {
