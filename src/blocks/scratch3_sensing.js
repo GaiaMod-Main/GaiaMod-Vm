@@ -61,6 +61,9 @@ class Scratch3SensingBlocks {
      */
     getPrimitives () {
         return {
+			sensing_alert: this.alert,
+            sensing_prompt: this.prompt,
+            sensing_confirm: this.confirm,
             sensing_objecttouchingobject: this.objectTouchingObject,
             sensing_objecttouchingclonesprite: this.objectTouchingCloneOfSprite,
             sensing_touchingobject: this.touchingObject,
@@ -408,6 +411,20 @@ class Scratch3SensingBlocks {
 
     getAnswer () {
         return this._answer;
+    }
+	
+	alert (args) {
+        return alert(args.MESSAGE);
+    }
+
+    prompt (args) {
+        const answer = prompt(args.MESSAGE, args.VALUE);
+        if (!answer) return '';
+        return answer;
+    }
+
+    confirm (args) {
+        return confirm(args.MESSAGE);
     }
 
     objectTouchingObject (args, util) {

@@ -814,6 +814,17 @@ class ScriptTreeGenerator {
                 kind: 'keyboard.pressed',
                 key: this.descendInputOfBlock(block, 'KEY_OPTION')
             };
+         case 'sensing_prompt':
+            return {
+                kind: 'sensing.prompt',
+                message: this.descendInputOfBlock(block, 'MESSAGE'),
+				value: this.descendInputOfBlock(block, 'VALUE')
+            };
+        case 'sensing_confirm':
+            return {
+                kind: 'sensing.confirm',
+                message: this.descendInputOfBlock(block, 'MESSAGE')
+            };
         case 'sensing_mousedown':
             return {
                 kind: 'mouse.down'
@@ -1888,7 +1899,11 @@ class ScriptTreeGenerator {
             return {
                 kind: 'timer.reset'
             };
-
+			case 'sensing_alert':
+            return {
+                kind: 'sensing.alert',
+                message: this.descendInputOfBlock(block, 'MESSAGE')
+            };
             /*
             can someone set up the jsgen for these, i dont want to rn
             case "sensing_regextest":
