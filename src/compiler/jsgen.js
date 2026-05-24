@@ -660,6 +660,13 @@ class JSGenerator {
             return new TypedInput('runtime.ioDevices.mouse.getScratchX()', TYPE_NUMBER);
         case 'mouse.y':
             return new TypedInput('runtime.ioDevices.mouse.getScratchY()', TYPE_NUMBER);
+        case 'prompt':
+            return `(prompt(${this.descendInput(node.message)}, ${this.descendInput(node.value)}) || "")`;			
+        case 'confirm':
+            return `confirm(${this.descendInput(node.message)})`;
+        case 'alert':
+            this.source += `alert(${this.descendInput(node.message)});\n`;
+            break;
 
         case 'op.true':
             return new TypedInput('(true)', TYPE_BOOLEAN);
