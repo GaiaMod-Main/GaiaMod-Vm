@@ -274,6 +274,7 @@ const defaultBuiltinExtensions = {
     poweredUp: () => require('../extensions/scratch3_powered_up'),
     duploTrain: () => require('../extensions/scratch3_duplo_train'),
     marty: () => require('../extensions/scratch3_marty'),
+	mbot: () => require('../extensions/scratch3_mbot'),
 
     // snail ide
     snailextras: () => require('../extensions/snail_extras'),
