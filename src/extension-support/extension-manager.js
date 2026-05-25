@@ -43,6 +43,31 @@ const defaultBuiltinExtensions = {
     boost: () => require('../extensions/scratch3_boost'),
     gdxfor: () => require('../extensions/scratch3_gdx_for'),
     text: () => require('../extensions/scratchLab_animatedText'),
+	
+		//bruh won't work...
+    //alexa: () => require('../extensions/scratch3_alexa'),
+    //sentiment: () => require('../extensions/scratch3_sentiment'),
+    //cozmo: () => require('../extensions/scratch3_cozmo'),
+    //hue: () => require('../extensions/scratch3_hue'),
+    //wemo: () => require('../extensions/scratch3_wemo'),
+    //clarifai: () => require('../extensions/scratch3_clarifai'),
+    //circuit: () => require('../extensions/scratch3_circuit'),
+    //tracking: () => require('../extensions/scratch3_tracking'),
+    //watson: () => require('../extensions/scratch3_watson'),
+    //watson_nlc: () => require('../extensions/scratch3_watson_nlc'),
+    //speech: () => require('../extensions/scratch3_speech'),
+    //twitter: () => require('../extensions/scratch3_twitter'),
+    //muse: () => require('../extensions/scratch3_muse'),
+	//mesh: () => require('../extensions/scratch3_mesh'),
+    //meshV2: () => require('../extensions/scratch3_mesh_v2'),
+    //smalrubotS1: () => require('../extensions/scratch3_smalrubot_s1'),
+    //pr2Robot: () => require('../extensions/scratch3_pr2robot'),
+    //fetchRobot: () => require('../extensions/scratch3_fetchrobot'),
+    //spotRobot: () => require('../extensions/scratch3_spotrobot'),
+    //go1Robot: () => require('../extensions/scratch3_go1robot'),
+    //pepperRobot: () => require('../extensions/scratch3_pepperrobot'),
+    //ros: () => require('../extensions/scratch3_ros'),
+	//server: () => require('../extensions/gaia_server'),
 
     // garbomuffin: *silence*
     // tw: core extension
@@ -270,12 +295,23 @@ const defaultBuiltinExtensions = {
     adaruntime: () => require('../extensions/scratch3_adaruntime'),
     adap5: () => require('../extensions/scratch3_adap5'),
 	
+	    // snail ide
+    snailextras: () => require('../extensions/snail_extras'),
+    goofiestExt: () => require('../extensions/scratch3_goofy'),
+    blockly2math: () => require('../extensions/blockly-2/math.js'),
+	
+    // GvbvdxxMod2
+    beepboxsynth: () => require('../extensions/scratch3_beepbox_synth'),
+	
+    // Cognimates
+    typescratch: () => require('../extensions/typescratch'),
+	
+	//other
     em_discordrpc: () => require('../extensions/em_discordrpc'),
     poweredUp: () => require('../extensions/scratch3_powered_up'),
     duploTrain: () => require('../extensions/scratch3_duplo_train'),
     marty: () => require('../extensions/scratch3_marty'),
 	mbot: () => require('../extensions/scratch3_mbot'),
-	
 	newmicrobit: () => require('../extensions/scratch3_newmicrobit'),
     meshled: () => require('../extensions/scratch3_meshled'),
     meshbrightness: () =>require('../extensions/scratch3_meshbrightness'),
@@ -287,42 +323,8 @@ const defaultBuiltinExtensions = {
     cookies: () => require('../extensions/scratch3_cookies'),
     controller: () => require('../extensions/scratch3_controller'),
 	debugger: () => require('../extensions/scratch3_debugger'),
-
-    // snail ide
-    snailextras: () => require('../extensions/snail_extras'),
-    goofiestExt: () => require('../extensions/scratch3_goofy'),
-    blockly2math: () => require('../extensions/blockly-2/math.js'),
-    // GvbvdxxMod2
-    beepboxsynth: () => require('../extensions/scratch3_beepbox_synth'),
-    // Cognimates
-    typescratch: () => require('../extensions/typescratch'),
-    //alexa: () => require('../extensions/scratch3_alexa'),
-    //sentiment: () => require('../extensions/scratch3_sentiment'),
-    //cozmo: () => require('../extensions/scratch3_cozmo'),
-    //hue: () => require('../extensions/scratch3_hue'),
-    //wemo: () => require('../extensions/scratch3_wemo'),
-    //clarifai: () => require('../extensions/scratch3_clarifai'),
-    //circuit: () => require('../extensions/scratch3_circuit'),
-    //tracking: () => require('../extensions/scratch3_tracking'),
-    //watson: () => require('../extensions/scratch3_watson'),
-    //watson_nlc: () => require('../extensions/scratch3_watson_nlc'),
-    //speech: () => require('../extensions/scratch3_speech'),
-    //twitter: () => require('../extensions/scratch3_twitter'),
-    //muse: () => require('../extensions/scratch3_muse'),
-		
-	//v
-	//mesh: () => require('../extensions/scratch3_mesh'),
-    //meshV2: () => require('../extensions/scratch3_mesh_v2'),
-    //smalrubotS1: () => require('../extensions/scratch3_smalrubot_s1'),
-    //pr2Robot: () => require('../extensions/scratch3_pr2robot'),
-    //fetchRobot: () => require('../extensions/scratch3_fetchrobot'),
-    //spotRobot: () => require('../extensions/scratch3_spotrobot'),
-    //go1Robot: () => require('../extensions/scratch3_go1robot'),
-    //pepperRobot: () => require('../extensions/scratch3_pepperrobot'),
-    //ros: () => require('../extensions/scratch3_ros'),
-	//server: () => require('../extensions/gaia_server'),
-	
-    // e
+	webmidi: () => require('../extensions/scratch3_webmidi'),
+    gamepad: () => require('../extensions/scratch3_gamepad'),
     Scratch3WirelessBlocks: () => require('../extensions/scratch3_wireless'),
     nmsderpMap: () => require('../extensions/nmsderp_maps'),
     appmaker: () => require('../extensions/gaia_appmaker'),
