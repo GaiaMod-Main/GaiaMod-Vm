@@ -297,7 +297,7 @@ const defaultBuiltinExtensions = {
     // Cognimates
     typescratch: () => require('../extensions/typescratch'),
     //alexa: () => require('../extensions/scratch3_alexa'),
-    sentiment: () => require('../extensions/scratch3_sentiment'),
+    //sentiment: () => require('../extensions/scratch3_sentiment'),
     //cozmo: () => require('../extensions/scratch3_cozmo'),
     //hue: () => require('../extensions/scratch3_hue'),
     //wemo: () => require('../extensions/scratch3_wemo'),
