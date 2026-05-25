@@ -296,8 +296,8 @@ const defaultBuiltinExtensions = {
     beepboxsynth: () => require('../extensions/scratch3_beepbox_synth'),
     // Cognimates
     typescratch: () => require('../extensions/typescratch'),
-    alexa: () => require('../extensions/scratch3_alexa'),
-    //sentiment: () => require('../extensions/scratch3_sentiment'),
+    //alexa: () => require('../extensions/scratch3_alexa'),
+    sentiment: () => require('../extensions/scratch3_sentiment'),
     //cozmo: () => require('../extensions/scratch3_cozmo'),
     //hue: () => require('../extensions/scratch3_hue'),
     //wemo: () => require('../extensions/scratch3_wemo'),
