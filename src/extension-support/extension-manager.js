@@ -312,7 +312,6 @@ const defaultBuiltinExtensions = {
     typescratch: () => require('../extensions/typescratch'),
 	
 	//other
-	wonderBlocks: () => require('../extensions/gaiawindwave90_wonderblocks'),
     em_discordrpc: () => require('../extensions/em_discordrpc'),
     poweredUp: () => require('../extensions/scratch3_powered_up'),
     duploTrain: () => require('../extensions/scratch3_duplo_train'),
@@ -324,8 +323,7 @@ const defaultBuiltinExtensions = {
     meshbrightness: () =>require('../extensions/scratch3_meshbrightness'),
     meshgpio: () =>require('../extensions/scratch3_meshgpio'),
     ohbot: () => require('../extensions/scratch3_ohbot'),
-	//hackcraft2: () => require('../extensions/scratch3_hackcraft2'),
-	//kori: () => require('../extensions/scratch3_kori'),
+	kori: () => require('../extensions/scratch3_kori'),
 	//jdcode: () => require('../extensions/scratch3_jdcode'),
     //robodog: () => require('../extensions/scratch3_robodog'),
     //firmtech: () => require('../extensions/scratch3_firmtech'),
