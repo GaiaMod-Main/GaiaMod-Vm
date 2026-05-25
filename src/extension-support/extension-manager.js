@@ -312,6 +312,7 @@ const defaultBuiltinExtensions = {
     typescratch: () => require('../extensions/typescratch'),
 	
 	//other
+    wonderblocks: () => require('../extensions/gaia_wonderblocks'),
     em_discordrpc: () => require('../extensions/em_discordrpc'),
     poweredUp: () => require('../extensions/scratch3_powered_up'),
     duploTrain: () => require('../extensions/scratch3_duplo_train'),
