@@ -36,6 +36,8 @@ jobs:
       - name: Make docs
         run: |
          npm install
+         npm install --legacy-peer-deps
+         npm audit fix --force
          npm run build
          npm run docs
 
