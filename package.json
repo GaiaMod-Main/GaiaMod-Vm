@@ -30,6 +30,13 @@
   },
   "dependencies": {
     "@croquet/croquet": "^0.3.2",
+	"@teachablemachine/image": "0.8.5",
+    "@teachablemachine/pose": "0.8.6",
+    "@tensorflow-models/posenet": "2.2.2",
+    "@tensorflow-models/speech-commands": "0.5.4",
+    "@tensorflow/tfjs": "3.21.0",
+    "@tensorflow/tfjs-converter": "3.21.0",
+    "@tensorflow/tfjs-core": "3.21.0",
     "@turbowarp/json": "^0.1.2",
     "@vernier/godirect": "1.5.0",
 	"ajv": "^8.17.1",
