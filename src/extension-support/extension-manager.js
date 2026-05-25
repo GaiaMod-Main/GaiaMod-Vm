@@ -275,6 +275,12 @@ const defaultBuiltinExtensions = {
     duploTrain: () => require('../extensions/scratch3_duplo_train'),
     marty: () => require('../extensions/scratch3_marty'),
 	mbot: () => require('../extensions/scratch3_mbot'),
+	
+	newmicrobit: () => require('../extensions/scratch3_newmicrobit'),
+    meshled: () => require('../extensions/scratch3_meshled'),
+    meshbrightness: () =>require('../extensions/scratch3_meshbrightness'),
+    meshgpio: () =>require('../extensions/scratch3_meshgpio'),
+    ohbot: () => require('../extensions/scratch3_ohbot'),
 
     // snail ide
     snailextras: () => require('../extensions/snail_extras'),
