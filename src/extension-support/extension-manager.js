@@ -68,6 +68,11 @@ const defaultBuiltinExtensions = {
     //pepperRobot: () => require('../extensions/scratch3_pepperrobot'),
     //ros: () => require('../extensions/scratch3_ros'),
 	//server: () => require('../extensions/gaia_server'),
+	//posebody: () => require('../extensions/scratch3_posebody'),
+    //poseface: () => require('../extensions/scratch3_poseface'),
+    //posehand: () => require('../extensions/scratch3_posehand'),
+    //objectdetection: () => require('../extensions/scratch3_objectdetection'),
+    //teachableMachine: () => require('../extensions/scratch3_teachablemachine'),
 
     // garbomuffin: *silence*
     // tw: core extension
@@ -342,11 +347,6 @@ const defaultBuiltinExtensions = {
     onegpioCpx: () => require('../extensions/scratch3_onegpioCpx'),
     onegpioRoboHAT: () => require('../extensions/scratch3_onegpioRoboHAT'),
     onegpioRpiPico: () => require('../extensions/scratch3_onegpioRpiPico'),
-	posebody: () => require('../extensions/scratch3_posebody'),
-    poseface: () => require('../extensions/scratch3_poseface'),
-    posehand: () => require('../extensions/scratch3_posehand'),
-    objectdetection: () => require('../extensions/scratch3_objectdetection'),
-    teachableMachine: () => require('../extensions/scratch3_teachablemachine'),
 	
 };
 const CORE_EXTENSIONS = [
