@@ -44,6 +44,12 @@ const defaultBuiltinExtensions = {
     gdxfor: () => require('../extensions/scratch3_gdx_for'),
     text: () => require('../extensions/scratchLab_animatedText'),
 	
+	posebody: () => require('../extensions/scratch3_posebody'),
+    poseface: () => require('../extensions/scratch3_poseface'),
+    posehand: () => require('../extensions/scratch3_posehand'),
+    objectdetection: () => require('../extensions/scratch3_objectdetection'),
+    teachableMachine: () => require('../extensions/scratch3_teachablemachine'),
+	
 		//bruh won't work...
     //alexa: () => require('../extensions/scratch3_alexa'),
     //sentiment: () => require('../extensions/scratch3_sentiment'),
