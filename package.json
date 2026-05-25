@@ -84,6 +84,23 @@
     "worker-loader": "^1.1.1",
 	"yargs": "^18.0.0"
   },
+  "resolutions": {
+    "@tensorflow/tfjs": "3.21.0",
+    "@tensorflow/tfjs-core": "3.21.0",
+    "@tensorflow/tfjs-converter": "3.21.0"
+  },
+  "overrides": {
+    "@teachablemachine/pose": {
+      "@tensorflow/tfjs": "3.21.0"
+    },
+    "@teachablemachine/image": {
+      "@tensorflow/tfjs": "3.21.0"
+    },
+    "@tensorflow-models/posenet": {
+      "@tensorflow/tfjs-core": "3.21.0",
+      "@tensorflow/tfjs-converter": "3.21.0"
+    }
+  },
   "peerDependencies": {
     "scratch-svg-renderer": "github:PenguinMod/penguinmod-svg-renderer#develop"
   },
