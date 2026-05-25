@@ -286,6 +286,7 @@ const defaultBuiltinExtensions = {
     regex: () => require('../extensions/scratch3_regex'),
     cookies: () => require('../extensions/scratch3_cookies'),
     controller: () => require('../extensions/scratch3_controller'),
+	debugger: () => require('../extensions/scratch3_debugger'),
 
     // snail ide
     snailextras: () => require('../extensions/snail_extras'),
