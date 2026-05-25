@@ -312,11 +312,13 @@ const defaultBuiltinExtensions = {
     typescratch: () => require('../extensions/typescratch'),
 	
 	//other
+	wonderBlocks: () => require('../extensions/gaiawindwave90_wonderblocks'),
     em_discordrpc: () => require('../extensions/em_discordrpc'),
     poweredUp: () => require('../extensions/scratch3_powered_up'),
     duploTrain: () => require('../extensions/scratch3_duplo_train'),
     marty: () => require('../extensions/scratch3_marty'),
 	mbot: () => require('../extensions/scratch3_mbot'),
+	mesh_motion_sensor: () =>require('../extensions/scratch3_motion_sensor'),
 	newmicrobit: () => require('../extensions/scratch3_newmicrobit'),
     meshled: () => require('../extensions/scratch3_meshled'),
     meshbrightness: () =>require('../extensions/scratch3_meshbrightness'),
