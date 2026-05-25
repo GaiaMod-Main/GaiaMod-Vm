@@ -281,6 +281,11 @@ const defaultBuiltinExtensions = {
     meshbrightness: () =>require('../extensions/scratch3_meshbrightness'),
     meshgpio: () =>require('../extensions/scratch3_meshgpio'),
     ohbot: () => require('../extensions/scratch3_ohbot'),
+	http: () => require('../extensions/scratch3_http'),
+    json: () => require('../extensions/scratch3_json'),
+    regex: () => require('../extensions/scratch3_regex'),
+    cookies: () => require('../extensions/scratch3_cookies'),
+    controller: () => require('../extensions/scratch3_controller'),
 
     // snail ide
     snailextras: () => require('../extensions/snail_extras'),
