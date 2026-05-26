@@ -36,8 +36,7 @@ class WonderBlocks {
             opcode: 'isGaiaMod',
             blockType: BlockType.BOOLEAN,
             text: 'Is GaiaMod?',
-			disableMonitor: true
-			
+			disableMonitor: true,
             },
 			{
             opcode: 'removeUnusedExtensions',

@@ -363,6 +363,8 @@ const defaultBuiltinExtensions = {
     onegpioRoboHAT: () => require('../extensions/scratch3_onegpioRoboHAT'),
     onegpioRpiPico: () => require('../extensions/scratch3_onegpioRpiPico'),
 	
+	chaserp: () => require('../extensions/chaser').CHaser,
+	
 };
 const CORE_EXTENSIONS = [
     'argument',
