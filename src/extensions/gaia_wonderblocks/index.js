@@ -43,7 +43,7 @@ class WonderBlocks {
             text: 'Remove all unused extensions',
           },
                 {
-        opcode: "capture",
+        opcode: "fetch",
         blockType: BlockType.REPORTER,
         text: "capture [URL]",
         arguments: {
@@ -69,7 +69,7 @@ async removeUnusedExtensions() {
       vm.extensionManager.removeUnusedExtensions();
     }
 	
-capture (args) {
+fetch (args) {
       return fetch(args.URL)
         .then((response) => {
           return response.text();
