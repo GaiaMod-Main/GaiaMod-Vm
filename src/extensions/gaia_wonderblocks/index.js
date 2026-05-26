@@ -60,7 +60,7 @@ class WonderBlocks {
     }
 
     isGaiaMod() {
-      this.isem = Scratch.extensions.isGaiaMod
+      this.isem = extensions.isGaiaMod
     ? "true"  : "false";
   return this.isem
     }
