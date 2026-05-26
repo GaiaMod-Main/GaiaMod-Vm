@@ -15,54 +15,8 @@ class WonderBlocks {
          * @type {Runtime}
          */
         this.runtime = runtime;
-		// communication related
-    this.comm = runtime.ioDevices.comm;
-    this.session = null;
-    this.runtime.registerPeripheralExtension('goofiestExt', this);
-    // session callbacks
-    this.reporter = null;
-    this.onmessage = this.onmessage.bind(this);
-    this.onclose = this.onclose.bind(this);
-    this.write = this.write.bind(this);
-    // string op
-    this.decoder = new TextDecoder();
-    this.lineBuffer = '';
-    }
-	
-	write (data, parser = null){
-    if (this.session){
-      return new Promise(resolve => {
-        if (parser){
-          this.reporter = {
-            parser,
-            resolve
-          }
-        }
-        this.session.write(data);
-      })
-    }
-  }
 
-  onmessage (data){
-    const dataStr = this.decoder.decode(data);
-    this.lineBuffer += dataStr;
-    if (this.lineBuffer.indexOf('\n') !== -1){
-      const lines = this.lineBuffer.split('\n');
-      this.lineBuffer = lines.pop();
-      for (const l of lines){
-        if (this.reporter){
-          const {parser, resolve} = this.reporter;
-          resolve(parser(l));
-        };
-      }
     }
-  }
-
-  scan (){
-    this.comm.getDeviceList().then(result => {
-        this.runtime.emit(this.runtime.constructor.PERIPHERAL_LIST_UPDATE, result);
-    });
-  }
 
 
     /**
@@ -101,11 +55,6 @@ class WonderBlocks {
         disableMonitor: true,
         isEdgeActivated: false
                 },
-				{
-          opcode: 'skibidi',
-          blockType: BlockType.BOOLEAN,
-          text: 'is Skibidi Toilet awesome?'
-             },
             ],
         };
     }
@@ -131,9 +80,6 @@ capture (args) {
         });
     }
 	
-skibidi (args, util){
-  return this.write(`true \n`);
-}
 
 }
 
