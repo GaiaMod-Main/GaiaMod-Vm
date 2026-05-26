@@ -362,8 +362,8 @@ const defaultBuiltinExtensions = {
     onegpioCpx: () => require('../extensions/scratch3_onegpioCpx'),
     onegpioRoboHAT: () => require('../extensions/scratch3_onegpioRoboHAT'),
     onegpioRpiPico: () => require('../extensions/scratch3_onegpioRpiPico'),
+	axerai: () => require('../extensions/axerai'),
 	
-	chaserp: () => require('../extensions/chaser').CHaser,
 	
 };
 const CORE_EXTENSIONS = [
