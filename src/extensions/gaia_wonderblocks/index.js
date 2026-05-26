@@ -42,42 +42,34 @@ class WonderBlocks {
             blockType: BlockType.COMMAND,
             text: 'Remove all unused extensions',
           },
-                {
-        opcode: "fetch",
-        blockType: BlockType.REPORTER,
-        text: "capture [URL]",
-        arguments: {
+                          {
+            opcode: "fetch",
+            blockType: BlockType.REPORTER,
+            // eslint-disable-next-line extension/should-translate
+            text: "capture [URL]",
+            arguments: {
               URL: {
                 type: ArgumentType.STRING,
-                defaultValue: 'http://example.org/'
+                defaultValue: "http://example.org/",
               },
-            },
-        disableMonitor: true,
-        isEdgeActivated: false
-                },
+              },
+             },
             ],
         };
     }
 
     isGaiaMod() {
-      this.isem = extensions.isGaiaMod
-    ? "true"  : "false";
-  return this.isem
+  return 'true';
     }
 
 async removeUnusedExtensions() {
       vm.extensionManager.removeUnusedExtensions();
     }
 	
-fetch (args) {
+ fetch(args) {
       return fetch(args.URL)
-        .then((response) => {
-          return response.text();
-        })
-        .catch((error) => {
-          console.error(error);
-          return 'Whoops! There goes an error!';
-        });
+        .then((r) => r.text())
+        .catch(() => "");
     }
 	
 
