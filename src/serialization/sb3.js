@@ -1291,7 +1291,7 @@ const parseScratchAssets = function (object, runtime, zip) {
 };
 
 /**
- * Convert a Procedure Block to a PenguinMod-acceptable format (TurboWarp compatibility)
+ * Convert a Procedure Block to a GaiaMod/PenguinMod-acceptable format (TurboWarp compatibility)
  * @param {!object} blockJSON - blockJSON for a block
  * @param {!object} blocks - all blocks in the sprite container
  */
@@ -1411,7 +1411,7 @@ const parseScratchObject = function (object, runtime, extensions, zip, assets, f
             blocks.createBlock(blockJSON);
         }
 
-        // convert TurboWarp custom reporters to PenguinMod's format
+        // convert TurboWarp custom reporters to GaiaMod's format
         if (runtime.origin === 'TurboWarp') for (const block of _converterCache) convertProcedureCompat(block, blocks);
     }
     // Costumes from JSON.
