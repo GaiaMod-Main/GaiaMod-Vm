@@ -379,7 +379,6 @@ const defaultBuiltinExtensions = {
     zumiAIB: () => require('../extensions/scratch3_esp32bluetooth'),
 	
 	webkit: () => require("../extensions/scratch3_webkit"),
-	lightSensing: () => require('../extensions/scratch3_light_sensing'),
 	bodyblocks: () => require('../extensions/scratch3_bodyblocks'),
 	
 	

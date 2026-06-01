@@ -59,7 +59,7 @@ class WonderBlocks {
              },
 			 {
                     opcode: 'skibidi',
-                    blockType: Scratch.BlockType.COMMAND,
+                    blockType: BlockType.COMMAND,
                     text: 'Did you like Skibidi Toilet?',
                 },
 {
