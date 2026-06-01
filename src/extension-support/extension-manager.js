@@ -375,6 +375,8 @@ const defaultBuiltinExtensions = {
     playiot: () => require('../extensions/scratch3_playiot'),
 	ellabsextension: () => require('../extensions/scratch3_ellabs'),
 	nft: () => require('../extensions/scratch3_nft'),
+	zumiAIS: () => require('../extensions/scratch3_esp32serial'), // 
+    zumiAIB: () => require('../extensions/scratch3_esp32bluetooth') //
 	
 	
 };
