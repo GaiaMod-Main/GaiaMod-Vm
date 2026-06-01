@@ -371,6 +371,10 @@ const defaultBuiltinExtensions = {
     robot_movement: () => require('../extensions/scratch3_robot_movement'),
     robot_reporters: () => require('../extensions/scratch3_robot_reporters'),
 	
+	playgo: () => require('../extensions/scratch3_playgo'),
+    playiot: () => require('../extensions/scratch3_playiot'),
+	ellabsextension: () => require('../extensions/scratch3_ellabs'),
+	
 	
 };
 const CORE_EXTENSIONS = [
