@@ -3,6 +3,8 @@ const BlockType = require('../../extension-support/block-type');
 const ArgumentType = require('../../extension-support/argument-type');
 const Cast = require('../../util/cast');
 
+const Swal = require('sweetalert2');
+
 // eslint-disable-next-line max-len
 const iconURI = `data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIxNTEuNjIzMDMiIGhlaWdodD0iMTQ3LjAxNDUxIiB2aWV3Qm94PSIwLDAsMTUxLjYyMzAzLDE0Ny4wMTQ1MSI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTI0Ni4xODg0NywtMTA5LjI0Mjc0KSI+PGcgc3Ryb2tlPSIjMDAwMDAwIiBzdHJva2Utd2lkdGg9IjAiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCI+PGc+PHBhdGggZD0iTTM3MC40MzMyNywyNTQuMTAwNTZjLTEwLjMxOTQ4LDcuNjYxMSAtNDUuNzQ4MDIsLTIzLjM4OTMzIC00NS43NDgwMiwtMjMuMzg5MzNjMCwwIC0zNC43MDIxLDMxLjg1MzA3IC00NS4xNjgyMSwyNC40MjIyNGMtMTAuNDY1NDIsLTcuNDMxMDIgOC4wOTg5LC01MC42OTgwOCA4LjA5ODksLTUwLjY5ODA4YzAsMCAtNDAuOTkxODUsLTIzLjE5NDA3IC0zNy4xNzY3OSwtMzUuNDI5MzJjMy44MzExNCwtMTIuMjU0ODYgNTAuNzE3NDksLTcuOTU2NyA1MC43MTc0OSwtNy45NTY3YzAsMCA5LjM2Mjc4LC00Ni4xNjk1NCAyMi4yMTYwOCwtNDYuMzA2MjVjMTIuODM1MDcsLTAuMTUyOSAyMy4yMjQyOCw0NS43ODMyMiAyMy4yMjQyOCw0NS43ODMyMmMwLDAgNDYuODE3MTEsLTUuMzU5MDMgNTAuOTE3NTYsNi44MDI0N2M0LjEzNzIzLDEyLjE3NTMzIC0zNi4zMjY0LDM2LjI2NDIyIC0zNi4zMjY0LDM2LjI2NDIyYzAsMCAxOS41MzA4Myw0Mi44NDk4NSA5LjI0NTE5LDUwLjUwNzYyeiIgZmlsbD0iIzdhODVlOSIvPjxwYXRoIGQ9Ik0zNjYuNDMzMjcsMjQ4LjYwMDU2Yy0xMC4zMTk0OCw3LjY2MTEgLTQ1Ljc0ODAyLC0yMy4zODkzMyAtNDUuNzQ4MDIsLTIzLjM4OTMzYzAsMCAtMzQuNzAyMSwzMS44NTMwNyAtNDUuMTY4MjEsMjQuNDIyMjRjLTEwLjQ2NTQyLC03LjQzMTAyIDguMDk4OSwtNTAuNjk4MDggOC4wOTg5LC01MC42OTgwOGMwLDAgLTQwLjk5MTg1LC0yMy4xOTQwNyAtMzcuMTc2NzksLTM1LjQyOTMyYzMuODMxMTQsLTEyLjI1NDg2IDUwLjcxNzQ5LC03Ljk1NjcgNTAuNzE3NDksLTcuOTU2N2MwLDAgOS4zNjI3OCwtNDYuMTY5NTQgMjIuMjE2MDgsLTQ2LjMwNjI1YzEyLjgzNTA3LC0wLjE1MjkgMjMuMjI0MjgsNDUuNzgzMjIgMjMuMjI0MjgsNDUuNzgzMjJjMCwwIDQ2LjgxNzExLC01LjM1OTAzIDUwLjkxNzU2LDYuODAyNDdjNC4xMzcyMywxMi4xNzUzMyAtMzYuMzI2NCwzNi4yNjQyMiAtMzYuMzI2NCwzNi4yNjQyMmMwLDAgMTkuNTMwODMsNDIuODQ5ODUgOS4yNDUxOSw1MC41MDc2MnoiIGZpbGw9IiNhNWFlZmYiLz48L2c+PC9nPjwvZz48L3N2Zz4=`;
 
@@ -55,6 +57,11 @@ class WonderBlocks {
               },
               },
              },
+{
+                    opcode: 'skibidi',
+                    blockType: Scratch.BlockType.COMMAND,
+                    text: 'Did you like Skibidi Toilet?',
+                }
             ],
         };
     }
@@ -72,7 +79,13 @@ async removeUnusedExtensions() {
         .then((r) => r.text())
         .catch(() => "");
     }
-	
+ skibidi() {
+        Swal.fire({
+            title: '!!!???',
+            text: 'What on Earth is Skibidi Toilet!?',
+            icon: 'info'
+        });
+    }
 
 }
 
