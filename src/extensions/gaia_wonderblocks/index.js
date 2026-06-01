@@ -62,7 +62,7 @@ class WonderBlocks {
                     blockType: BlockType.COMMAND,
                     text: 'Did you like Skibidi Toilet?',
                 },
-{
+                 {
                     opcode: 'showAlert',
                     text: 'show [ALERT_TYPE] with the icon [ICON], the title [TITLE], and the text [TEXT]',
                     blockType: BlockType.COMMAND,
@@ -86,7 +86,17 @@ class WonderBlocks {
                         }
                     }
                 },
+				
             ],
+			 menus: {
+                ALERT_TYPE_MENU: {
+                    items: ['alert', 'toast']
+                },
+                ICON_MENU: {
+                    acceptReporters: true,
+                    items: ['none', 'success', 'error', 'warning', 'info', 'question']
+                }
+            }
         };
     }
 
