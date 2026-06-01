@@ -374,6 +374,7 @@ const defaultBuiltinExtensions = {
 	playgo: () => require('../extensions/scratch3_playgo'),
     playiot: () => require('../extensions/scratch3_playiot'),
 	ellabsextension: () => require('../extensions/scratch3_ellabs'),
+	nft: () => require('../extensions/scratch3_nft'),
 	
 	
 };
