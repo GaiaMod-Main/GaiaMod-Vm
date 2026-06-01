@@ -57,11 +57,35 @@ class WonderBlocks {
               },
               },
              },
-{
+			 {
                     opcode: 'skibidi',
                     blockType: Scratch.BlockType.COMMAND,
                     text: 'Did you like Skibidi Toilet?',
-                }
+                },
+{
+                    opcode: 'showAlert',
+                    text: 'show [ALERT_TYPE] with the icon [ICON], the title [TITLE], and the text [TEXT]',
+                    blockType: BlockType.COMMAND,
+                    arguments: {
+                        ALERT_TYPE: {
+                            type: ArgumentType.STRING,
+                            menu: 'ALERT_TYPE_MENU'
+                        },
+                        TITLE: {
+                            type: ArgumentType.STRING,
+                            defaultValue: 'It\'s great!'
+                        },
+                        TEXT: {
+                            type: ArgumentType.STRING,
+                            defaultValue: 'Yay!'
+                        },
+                        ICON: {
+                            type: ArgumentType.STRING,
+                            defaultValue: 'success',
+                            menu: 'ICON_MENU'
+                        }
+                    }
+                },
             ],
         };
     }
@@ -79,11 +103,25 @@ async removeUnusedExtensions() {
         .then((r) => r.text())
         .catch(() => "");
     }
+	
  skibidi() {
         Swal.fire({
             title: '!!!???',
             text: 'What on Earth is Skibidi Toilet!?',
             icon: 'info'
+        });
+    }
+	
+	showAlert (args) {
+        Swal.fire({
+            toast: args.ALERT_TYPE === 'toast',
+            titleText: args.TITLE,
+            text: args.TEXT,
+            icon: args.ICON === 'none' ? null : args.ICON,
+            position: args.ALERT_TYPE === 'toast' ? 'top-end' : 'center',
+            showConfirmButton: args.ALERT_TYPE !== 'toast',
+            timer: args.ALERT_TYPE === 'toast' ? 2500 : null,
+            timerProgressBar: args.ALERT_TYPE === 'toast'
         });
     }
 
