@@ -363,10 +363,13 @@ const defaultBuiltinExtensions = {
     onegpioRoboHAT: () => require('../extensions/scratch3_onegpioRoboHAT'),
     onegpioRpiPico: () => require('../extensions/scratch3_onegpioRpiPico'),
 	axerai: () => require('../extensions/axerai'),
-	//cozmo: () => require('../extensions/scratch3_cozmo'),
 	tello2: () => require('../extensions/scratch3_tello2'),
-	//iot: () => require('../extensions/scratch3_iot'),
-	//eim: () => require('../extensions/scratch3_eim'),
+	
+	// Custom extentions
+    robot_communication: () => require('../extensions/scratch3_robot_communication'),
+    robot_conditions: () => require('../extensions/scratch3_robot_conditions'),
+    robot_movement: () => require('../extensions/scratch3_robot_movement'),
+    robot_reporters: () => require('../extensions/scratch3_robot_reporters'),
 	
 	
 };
