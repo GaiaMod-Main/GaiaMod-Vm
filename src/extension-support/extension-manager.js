@@ -380,6 +380,8 @@ const defaultBuiltinExtensions = {
 	
 	webkit: () => require("../extensions/scratch3_webkit"),
 	bodyblocks: () => require('../extensions/scratch3_bodyblocks'),
+	 pictobloxmath: () => require('../extensions/scratch3_PictoBloxMath'),
+    pictobloxstring: () => require('../extensions/scratch3_PictoBloxString'),
 	
 	
 };
