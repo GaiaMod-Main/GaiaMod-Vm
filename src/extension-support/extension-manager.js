@@ -383,6 +383,16 @@ const defaultBuiltinExtensions = {
 	 pictobloxmath: () => require('../extensions/scratch3_PictoBloxMath'),
     pictobloxstring: () => require('../extensions/scratch3_PictoBloxString'),
 	
+	//by yj
+    lazyAudio: () => require('../extensions/scratch3_lazy_audio'),
+    canvas: () => require('../extensions/scratch3_canvas'),
+    battle: () => require('../extensions/scratch3_battle'),
+    js: () => require('../extensions/scratch3_js'),
+    stringExt: () => require('../extensions/scratch3_string_ext'),
+    puzzle: () => require('../extensions/scratch3_puzzle'),
+    community: () => require('../extensions/scratch3_community'),
+    kinect: () => require('../extensions/scratch3_kinect'),
+	
 	
 };
 const CORE_EXTENSIONS = [
