@@ -35,6 +35,9 @@ const SERVER_HOST = 'https://synthesis-service.scratch.mit.edu';
  */
 const PM_SERVER_HOST = 'https://gextapi.derpygamer2142.com';
 
+
+const MARTY_SERVER_HOST = "https://appv2-analytics-server.robotical.io";
+
 /**
  * How long to wait in ms before timing out requests to synthesis server.
  * @type {int}
@@ -76,6 +79,36 @@ const KITTEN_ID = 'KITTEN';
  * An id for one of the voices.
  */
 const GOOGLE_ID = 'GOOGLE';
+
+/**
+ * An id for one of the voices.
+ */
+const ALIEN_ID = 'ALIEN';
+
+/**
+ * An id for one of the voices.
+ */
+const PUPPY_ID = 'PUPPY';
+
+/**
+ * An id for one of the voices.
+ */
+const BOLT_ID = 'BOLT';
+
+/**
+ * An id for one of the voices.
+ */
+const BLAZE_ID = 'BLAZE';
+
+/**
+ * An id for one of the voices.
+ */
+const STARLIGHT_ID = 'STARLIGHT';
+
+/**
+ * An id for one of the voices.
+ */
+const WHIRLWIND_ID = 'WHIRLWIND';
 
 /**
  * Playback rate for the tenor voice, for cases where we have only a female gender voice.
@@ -214,6 +247,66 @@ class Scratch3Text2SpeechBlocks {
                 gender: 'mixed',
                 playbackRate: 1
             },
+			///New additions
+			 [PUPPY_ID]: {
+                name: formatMessage({
+                    id: 'text2speech.puppy',
+                    default: 'puppy',
+                    description: 'A baby dog.'
+                }),
+                gender: 'female',
+                playbackRate: 1.51 // +6 semitones
+            },
+		[BLAZE_ID]: {
+         name: formatMessage({
+           id: "text2speech.blaze",
+           default: "Blaze",
+           description: "High-pitched male voice.",
+         }),
+         gender: "male",
+         playbackRate: 1,
+         pitch: 1.3,
+       },
+		 [ALIEN_ID]: {
+        name: formatMessage({
+          id: "text2speech.alien",
+          default: "alien",
+          description: "An alien.",
+        }),
+        gender: "female",
+        playbackRate: 0.79, // -6 semitones
+        pitch: 1.5,
+      },
+         [BOLT_ID]: {
+        name: formatMessage({
+          id: "text2speech.bolt",
+          default: "Bolt",
+          description: "Male voice with high pitch and playback rate.",
+        }),
+        gender: "male",
+        playbackRate: 1.3,
+        pitch: 1.3,
+      },
+      [STARLIGHT_ID]: {
+        name: formatMessage({
+          id: "text2speech.starlight",
+          default: "Starlight",
+          description: "Female voice with low pitch and playback rate.",
+        }),
+        gender: "female",
+        playbackRate: 0.7,
+        pitch: 0.7,
+          },
+	[WHIRLWIND_ID]: {
+        name: formatMessage({
+          id: "text2speech.whirlwind",
+          default: "Whirlwind",
+          description: "Female voice with high playback rate and low pitch.",
+        }),
+        gender: "female",
+        playbackRate: 1.3,
+        pitch: 0.7,
+      },
         };
     }
 
@@ -480,12 +573,12 @@ class Scratch3Text2SpeechBlocks {
     getInfo () {
         // Only localize the default input to the "speak" block if we are in a
         // supported language.
-        let defaultTextToSpeak = 'hello';
+        let defaultTextToSpeak = 'Welcome to GaiaMod!';
         if (this.isSupportedLanguage(this.getEditorLanguage())) {
             defaultTextToSpeak = formatMessage({
                 id: 'text2speech.defaultTextToSpeak',
-                default: 'hello',
-                description: 'hello: the default text to speak'
+                default: 'Welcome to GaiaMod!',
+                description: 'the default text to speak'
             });
         }
 
@@ -503,7 +596,7 @@ class Scratch3Text2SpeechBlocks {
                     opcode: 'speakAndWait',
                     text: formatMessage({
                         id: 'text2speech.speakAndWaitBlock',
-                        default: 'speak [WORDS]',
+                        default: 'speak [WORDS] and wait',
                         description: 'Speak some words.'
                     }),
                     blockType: BlockType.COMMAND,
@@ -827,6 +920,11 @@ class Scratch3Text2SpeechBlocks {
             words = words.replace(/\S+/g, 'meow');
             locale = this.LANGUAGE_INFO[this.DEFAULT_LANGUAGE].speechSynthLocale;
         }
+		
+        if (state.voiceId === PUPPY_ID) {
+            words = words.replace(/\S+/g, 'woof');
+            locale = this.LANGUAGE_INFO[this.DEFAULT_LANGUAGE].speechSynthLocale;
+        }
 
         let isPenguinMod = false;
         let penguinModVoice = '';
@@ -844,7 +942,7 @@ class Scratch3Text2SpeechBlocks {
         if (isPenguinMod) {
             path = `${PM_SERVER_HOST}/tts`;
         } else {
-            path = `${SERVER_HOST}/synth`;
+            path = `${MARTY_SERVER_HOST}/synth`; //lol!
         }
         if (isPenguinMod) {
             path += `?lang=${locale}`;
