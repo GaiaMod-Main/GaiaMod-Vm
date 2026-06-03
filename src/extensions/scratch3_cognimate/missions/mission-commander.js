@@ -136,13 +136,6 @@ function jiboSay(tts) {
 
 }
 
-function jiboSay(tts) {
-	console.log(tts);
-	//return tts;
-	//return window.robot.say(tts);
-
-}
-
 function jiboShowImage(filename) {
 	const path = "http://"+metadata.ip+":8080/" + filename;
 	console.log(path);
