@@ -36,7 +36,7 @@ const SERVER_HOST = 'https://synthesis-service.scratch.mit.edu';
 const PM_SERVER_HOST = 'https://gextapi.derpygamer2142.com';
 
 
-const MARTY_SERVER_HOST = "https://appv2-analytics-server.robotical.io";
+const MARTY_SERVER_HOST = 'https://appv2-analytics-server.robotical.io';
 
 /**
  * How long to wait in ms before timing out requests to synthesis server.
@@ -943,7 +943,7 @@ class Scratch3Text2SpeechBlocks {
         if (isPenguinMod) {
             path = `${PM_SERVER_HOST}/tts`;
         } else {
-            path = `${SERVER_HOST}/synth`; //lol
+            path = `${MARTY_SERVER_HOST}/synth`; //lol
         }
         if (isPenguinMod) {
             path += `?lang=${locale}`;
