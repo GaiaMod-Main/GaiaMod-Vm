@@ -943,7 +943,7 @@ class Scratch3Text2SpeechBlocks {
         if (isPenguinMod) {
             path = `${PM_SERVER_HOST}/tts`;
         } else {
-            path = `${MARTY_SERVER_HOST}/synth`; //lol
+            path = `${SERVER_HOST}/synth`; //lol
         }
         if (isPenguinMod) {
             path += `?lang=${locale}`;
