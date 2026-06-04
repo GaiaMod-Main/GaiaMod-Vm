@@ -255,7 +255,8 @@ class Scratch3Text2SpeechBlocks {
                     description: 'A baby dog.'
                 }),
                 gender: 'female',
-                playbackRate: 1.51 // +6 semitones
+                playbackRate: 1.41, // +6 semitones
+				pitch: 1.4,
             },
 		[BLAZE_ID]: {
          name: formatMessage({
