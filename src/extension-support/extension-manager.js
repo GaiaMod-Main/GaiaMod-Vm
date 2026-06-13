@@ -307,6 +307,18 @@ const defaultBuiltinExtensions = {
 	
     // GvbvdxxMod2
     beepboxsynth: () => require('../extensions/scratch3_beepbox_synth'),
+    roku: () => require("../extensions/scratch3_roku"),
+    nesemulator: () => require("../extensions/nes"),
+    sndanalyser: () => require('../extensions/gm2_projectsound'),
+	html5: () => require('../extensions/html5_elements'),
+	websocket: () => require('../extensions/scratch3_websocket'),
+	audioctx: () => require('../extensions/scratch3_audio_context'),
+	extra: () => require('../extensions/scratch3_extra'),
+	userdata: () => require('../extensions/scratch3_user_data'),
+	dialogs: () => require('../extensions/scratch3_dialog'),
+	speech4pc: () => require('../extensions/speech4pc'),
+	websites: () => require('../extensions/scratch3_websites'),
+	betteraudio: () => require('../extensions/scratch3_better_audio'),
 	
     // Cognimates
     typescratch: () => require('../extensions/typescratch'),
@@ -351,8 +363,6 @@ const defaultBuiltinExtensions = {
     pythonExtension: () => require("../extensions/nmsderp_python"),
     threeAxisAccelerometer: () => require("../extensions/scratch3_3axis"),
     scratch2maqueen: () => require("../extensions/scratch3_scratch2maqueen"),
-    roku: () => require("../extensions/scratch3_roku"),
-    nesemulator: () => require("../extensions/nes"),
     shareExt: () => require("../extensions/scratch3_share"),
     sweetalert2: () => require("../extensions/scratch3_sweetalert"),
     onegpioArduino: () => require('../extensions/scratch3_onegpioArduino'),

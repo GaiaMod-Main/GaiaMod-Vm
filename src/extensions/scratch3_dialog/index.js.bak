@@ -1,0 +1,424 @@
+const ArgumentType = require('../../extension-support/argument-type');
+const BlockType = require('../../extension-support/block-type');
+const Cast = require('../../util/cast');
+const log = require('../../util/log');
+let readtextresult = "";
+let readresultedbool = false;
+var blockIconURI = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAUQSURBVHhe7d3tlaJKFEbhjqADIiDjIRpymBgIxjmnQMSCVw4KWNi71vNnVkvJuuzmq8X7c/33C8wiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEsd61NU1TXy6VsfEzO+wH6RV13bTt1eTzFI841iOOk2kb20y+pfotkw/7Sd1cTb5gWGs1VD/m9WFrZyvZtNnMxSKOKOI4q7YObLSqNrZ3z5ZdcG0tCu9iw1FdjIWav1dhiENrG98h9QvvMCyP7B0LQxwacWT/PqmN47jaLt+z2LEMG2llVh/mDkQcc4gjIY4Z1sWeh5Nh+DlpyaelxDGR5gpM1w+/Np27x9W2fvHr179yLuI4BHHsgThy4QOKz+XTTWaY0V34ZPfQ0sosx/o5xDFyOw+NDJ8pWzzmfqeVS9ljEMceiGOkrbsTjqVhL0kTZYt/HeIYIY5HxDHSXGJHFXuNX2jki38d4hiJxsGe41SIYw/EMRKNw4fPlC3+dYhjhDgeEcdI9GqlGz6XT5dN8kWIY2TNTbA07E2r+jyfCV2LOEaI4xFxjKQHUuLHlWFUl9pYJPmEJ0ccI8TxiDgmVh1YHkd6dMYfTPmOUIhjIu08Xth/5CPtTE59RkIcE8RxQxxzbjc83i/Ex2krIY45xJEQh7bmbnpkWCSpk/AKfBpxLEifC95oF9IPf4baPw8yea/SEMcC4ji9/eJw6cGCyDusGuX3QRwBxHFq+8ZxY4XcHyzYYPja+ApN3qgQxPGibSrZdJU2RxwvIo7TOD6OQevXM/4Ht/5d1o9iTz6I413EUboPxnE3fY4+OKyObKoyEMf2LJLu1ll4+L7DZPN8HHFsjzjKUlQcvRV/tPPV8jXLZvg04tgNcRSixDhWfCshceypzDjCnwghjj0Rxx6IY0/EUYJQHJfm4NtNtlahFeNSdlfEsYcviSO0816KwyZJ8/ingLsPAr91DIo//5IOdoce72KI4444MuePI/y9CbYJfCtkiw9mtqX9o3+WYN2W85e3oXVK49lafVTpcQy/zdWl6b6C/v7T20c7Q7+d6cDux/Zh8Uwq7MkGtTWo6yb9f0B95IvbGcbwTfgpq9jw1xZ4ndIhjhvimCg9jvi2Xxq+DZ5thqU4dhmHX0CtQhw3xDHxZ+JIO2+TzX/3gTj8KFfg7Y3BX4nj2dlGJ37lucGwtyn3VGNAHDfEMfEH4oj/vW3dl9S+PJbOfopBHCPE8eir46gu6esOVp70pQ8Hr/p8cHBU6ctbQpmWofQ47Df5tV9mv2P2/PJkSds23QNL/YyvDr9/l+bK5i8fcUjEUXocPfuPm+5M26aybTW3uewH/lSi395+r4kZ6Q9ptgb2/t0qpLWYju4nVXpVus+++ZocizgCiAPIEAck4oBEHJCIAxJxQCIOSMQBiTggEQck4oBEHJCIAxJxQCIOSMQBiTggEQck4oBEHJCIAxJxQCIOSMQBiTggEQck4oBEHJCIAxJxQCIOSMQBiTggEQck4oBEHJCIAxJxQCIOSMQBiTggEQck4oBEHJCIAxJxQCIOSMQBiTggEQck4oBEHBD+/f4HsUQyQPEzmhIAAAAASUVORK5CYII=";
+let costVariables = [];
+const formatMessage = require('format-message');
+let fileselectdiv = document.createElement("div"); //make the dialog div global
+document.body.appendChild(fileselectdiv); //put the div in the body element
+fileselectdiv.hidden = true;
+fileselectdiv.innerHTML = "<center><h1>Select File:</h1><br><input type='file' id='fileselectDialogFile'><br><br><br><button id='okDialogFile'>Ok</button></center>"; //Html Code
+document.getElementById("okDialogFile").onclick = function () { //run this when the ok button gets clicked
+	var reader = new FileReader();
+	reader.onload = function () {
+		readtextresult = reader.result;
+		readresultedbool = true;
+	}
+	if(document.getElementById('fileselectDialogFile').files[0]) {
+		reader.readAsText(document.getElementById('fileselectDialogFile').files[0]);
+	} else {
+		readresultedbool = true;
+		readtextresult = '';
+	}
+	document.getElementById("fileselectDialogFile").value = "";
+	document.getElementById("fileselectDialogFile").innerHTML = "";
+	fileselectdiv.hidden = true;
+}
+fileselectdiv.setAttribute("style","position:fixed; left:0px; top:0px; border-color:grey; border-style:solid; border-width:2px; background-color:white; width:600px; height:200px; z-index:1000000000000;");
+
+
+class Scratch3NewBlocks {
+    constructor (runtime) {
+        this.runtime = runtime;
+		this.runtime.scrollX = 0;
+		this.runtime.scrollY = 0;
+    }
+
+    getInfo () {
+        return {
+            id: 'dialogs',
+            name: 'JS',
+			blockIconURI: blockIconURI,
+            blocks: [
+                {
+                    opcode: 'alertdialog',
+                    blockType: BlockType.COMMAND,
+                    text: 'Display [TEXT]',
+                    arguments: {
+                        TEXT: {
+                            type: ArgumentType.STRING,
+                            defaultValue: "Hello World!"
+                        }
+                    }
+                },
+                {
+                    opcode: 'confirmdialog',
+                    blockType: BlockType.BOOLEAN,
+                    text: 'Confirm [TEXT]',
+                    arguments: {
+                        TEXT: {
+                            type: ArgumentType.STRING,
+                            defaultValue: "Do You Agree?"
+                        }
+                    }
+                },
+                {
+                    opcode: 'savetxtfile',
+                    blockType: BlockType.COMMAND,
+                    text: 'Save Text File [name] With Text [txt]',
+                    arguments: {
+                        name: {
+                            type: ArgumentType.STRING,
+                            defaultValue: "text.txt"
+                        },
+						txt: {
+                            type: ArgumentType.STRING,
+                            defaultValue: "My Text."
+						}
+                    }
+                },
+                {
+                    opcode: 'opentxtfile',
+                    blockType: BlockType.COMMAND,
+                    text: 'Prompt User To Open A File With Extensions: [types]',
+                    arguments: {
+						types: {
+							type: ArgumentType.STRING,
+							defaultValue: ".txt,.ini"
+						}
+                    }
+                },
+                {
+                    opcode: 'getreadresult',
+                    blockType: BlockType.REPORTER,
+                    text: 'Read Value',
+                    arguments: {
+						
+                    }
+                },
+                {
+                    opcode: 'readresulted',
+                    blockType: BlockType.HAT,
+                    text: 'On Read Complete',
+                    arguments: {
+						
+                    }
+                },
+                {
+                    opcode: 'windowopen',
+                    blockType: BlockType.COMMAND,
+                    text: 'Open Link [URL]',
+                    arguments: {
+						URL: {
+                            type: ArgumentType.STRING,
+                            defaultValue: "https://scratch.mit.edu"
+						}
+                    }
+                },
+                {
+                    opcode: 'newvariable',
+                    blockType: BlockType.COMMAND,
+                    text: 'Make New Global Variable Named [TEXT]',
+                    arguments: {
+                        TEXT: {
+                            type: ArgumentType.STRING,
+                            defaultValue: "Hello"
+                        }
+                    }
+                },
+                {
+                    opcode: 'setvariable',
+                    blockType: BlockType.COMMAND,
+                    text: 'Set Variable Named [TEXT] To [VAL]',
+                    arguments: {
+                        TEXT: {
+                            type: ArgumentType.STRING,
+                            defaultValue: "Hello"
+                        },
+                        VAL: {
+                            type: ArgumentType.STRING,
+                            defaultValue: "1"
+                        }
+                    }
+                },
+                {
+                    opcode: 'setvariableadd',
+                    blockType: BlockType.COMMAND,
+                    text: 'Change Variable Named [TEXT] By [VAL]',
+                    arguments: {
+                        TEXT: {
+                            type: ArgumentType.STRING,
+                            defaultValue: "Hello"
+                        },
+                        VAL: {
+                            type: ArgumentType.STRING,
+                            defaultValue: "1"
+                        }
+                    }
+                },
+                {
+                    opcode: 'getvariable',
+                    blockType: BlockType.REPORTER,
+                    text: 'Get Variable Named [TEXT] Value',
+                    arguments: {
+                        TEXT: {
+                            type: ArgumentType.STRING,
+                            defaultValue: "Hello"
+                        }
+                    }
+                },
+                {
+                    opcode: 'savelocal',
+                    blockType: BlockType.COMMAND,
+                    text: 'Save to local page storage [data] named [name] ',
+                    arguments: {
+                        data: {
+                            type: ArgumentType.STRING,
+                            defaultValue: "text"
+                        },
+						name: {
+                            type: ArgumentType.STRING,
+                            defaultValue: "localdata"
+						}
+                    }
+                },
+                {
+                    opcode: 'loadlocal',
+                    blockType: BlockType.REPORTER,
+                    text: 'Load local page storage named [name]',
+                    arguments: {
+						name: {
+                            type: ArgumentType.STRING,
+                            defaultValue: "localdata"
+						}
+                    }
+                },
+                {
+                    opcode: 'dellocal',
+                    blockType: BlockType.COMMAND,
+                    text: 'Delete the local page storage named [name]',
+                    arguments: {
+						name: {
+                            type: ArgumentType.STRING,
+                            defaultValue: "localdata"
+						}
+                    }
+                },
+                {
+                    opcode: 'clickgreenflag',
+                    blockType: BlockType.COMMAND,
+                    text: 'Click Green Flag',
+                    arguments: {
+                    }
+                },
+                {
+                    opcode: 'setScroll',
+                    blockType: BlockType.COMMAND,
+                    text: 'set Scroll X: [x] Y: [y]',
+                    arguments: {
+						x: {
+                            type: ArgumentType.STRING,
+                            defaultValue: 10
+						},
+						y: {
+                            type: ArgumentType.STRING,
+                            defaultValue: 10
+						}
+                    }
+                },
+                {
+                    opcode: 'scrollX',
+                    blockType: BlockType.REPORTER,
+                    text: 'Scroll X',
+                    arguments: {
+                    }
+                },
+                {
+                    opcode: 'scrollY',
+                    blockType: BlockType.REPORTER,
+                    text: 'Scroll Y',
+                    arguments: {
+                    }
+                },
+                {
+                    opcode: 'setSpriteWorldPos',
+                    blockType: BlockType.COMMAND,
+                    text: 'Set World Position X: [x] Y: [y]',
+                    arguments: {
+						x: {
+                            type: ArgumentType.STRING,
+                            defaultValue: 10
+						},
+						y: {
+                            type: ArgumentType.STRING,
+                            defaultValue: 10
+						}
+                    }
+                },
+                {
+                    opcode: 'updateSpriteWorldPos',
+                    blockType: BlockType.COMMAND,
+                    text: 'Update World',
+                    arguments: {
+                    }
+                },
+                {
+                    opcode: 'SpriteWorldX',
+                    blockType: BlockType.REPORTER,
+                    text: 'World X',
+                    arguments: {
+                    }
+                },
+                {
+                    opcode: 'SpriteWorldY',
+                    blockType: BlockType.REPORTER,
+                    text: 'World Y',
+                    arguments: {
+                    }
+                }
+            ],
+            menus: {
+				
+            }
+        };
+    }
+
+    alertdialog (args) {
+        const text = Cast.toString(args.TEXT);
+        window.alert(text);
+    }
+    confirmdialog (args) {
+        const text = Cast.toString(args.TEXT);
+		return window.confirm(text);
+    }
+    savetxtfile (args) {
+        const name = Cast.toString(args.name);
+		const txt = Cast.toString(args.txt);
+		const blob = new Blob([txt], {type : '.txt'});
+		var a = document.createElement("a");
+		a.href = URL.createObjectURL(blob);
+		a.download = name;
+		a.click();
+    }
+    opentxtfile (args) {
+		fileselectdiv.hidden = false;
+		document.getElementById("fileselectDialogFile").accept = Cast.toString(args.types);
+    }
+	getreadresult () {
+		return readtextresult;
+	}
+	readresulted (args) {
+		if (readresultedbool) {
+			setTimeout(function () {
+				readresultedbool = false;
+			},4);
+			return true;
+		} else {
+			return false;
+		}
+	}
+	
+	windowopen (args) {
+		window.open(args.URL)
+	}
+	newvariable (args) {
+		var varname = Cast.toString(args.TEXT);
+		try {
+			costVariables[varname] = {
+				name:varname,
+				value:0
+				}
+		}catch(e){}
+	}
+	setvariable (args) {
+		var varname = Cast.toString(args.TEXT);
+		var value = Cast.toString(args.VAL);
+		try {
+			costVariables[varname].value = value;
+		}catch(e){
+		}
+	}
+	setvariableadd (args) {
+		var varname = Cast.toString(args.TEXT);
+		var value = Cast.toString(args.VAL);
+		try {
+			costVariables[varname].value = Number(costVariables[varname].value) + Number(value);
+		}catch(e){}
+	}
+	getvariable (args) {
+		var varname = Cast.toString(args.TEXT);
+		try {
+			return costVariables[varname].value;
+		}catch(e){return 0;}
+	}
+	savelocal (args) {
+		var dta = Cast.toString(args.data);
+		var nme = Cast.toString(args.name);
+		try{localStorage.setItem(nme,dta);}catch(e){}
+	}
+	loadlocal (args) {
+		try{var nme = Cast.toString(args.name);}catch(e){}
+		return localStorage.getItem(nme);
+	}
+	dellocal (args) {
+		var nme = Cast.toString(args.name);
+		try{localStorage.removeItem(nme);}catch(e){}
+	}
+	clickgreenflag () {
+		try{
+			this.runtime.greenFlag();
+		}catch(e){console.error(e);}
+	}
+	setScroll (args, util) {
+		try{
+			this.runtime.scrollX = Cast.toNumber(args.x);
+			this.runtime.scrollY = Cast.toNumber(args.y);
+		}catch(e){console.error(e);}
+	}
+	scrollX () {
+		return this.runtime.scrollX;
+	}
+	scrollY () {
+		return this.runtime.scrollY;
+	}
+	setSpriteWorldPos (args, util) {
+		try{
+			util.target.inWorldPosX = Cast.toNumber(args.x);
+			util.target.inWorldPosY = Cast.toNumber(args.y);
+		}catch(e){console.error(e);}
+	}
+	updateSpriteWorldPos (args, util) {
+		try{
+			if (util.target.inWorldPosX && util.target.inWorldPosY) {
+				util.target.setXY(this.runtime.scrollX+util.target.inWorldPosX,this.runtime.scrollY+util.target.inWorldPosY);
+			}
+		}catch(e){console.error(e);}
+	}
+	SpriteWorldX (args, util) {
+		try{
+			if (util.target.inWorldPosX) {
+				return util.target.inWorldPosX;
+			} else {
+				return 0;
+			}
+		}catch(e){
+			
+		}
+	}
+	SpriteWorldY (args, util) {
+		try{
+			if (util.target.inWorldPosY) {
+				return util.target.inWorldPosY;
+			} else {
+				return 0;
+			}
+		}catch(e){
+			
+		}
+	}
+}
+
+module.exports = Scratch3NewBlocks;
