@@ -317,6 +317,7 @@ const defaultBuiltinExtensions = {
 	userdata: () => require('../extensions/scratch3_user_data'),
 	dialogs: () => require('../extensions/scratch3_dialog'),
 	speech4pc: () => require('../extensions/speech4pc'),
+	projectsound: () => require('../extensions/gm2_projectsound'),
 	websites: () => require('../extensions/scratch3_websites'),
 	betteraudio: () => require('../extensions/scratch3_better_audio'),
 	
