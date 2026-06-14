@@ -404,6 +404,23 @@ const defaultBuiltinExtensions = {
     community: () => require('../extensions/scratch3_community'),
     kinect: () => require('../extensions/scratch3_kinect'),
 	
+	maika: () => require('../extensions/scratch3_olli_maika'),
+	gasoIFTTT: () => require('../extensions/scratch3_ifttt'),
+    gasoLASS: () => require('../extensions/scratch3_lass'),
+    gasoThingSpeak: () => require('../extensions/scratch3_thingspeak'),
+	
+	smartLumies: () => require('../extensions/scratch3_smart_lumies'),
+    matatabot: () => require('../extensions/scratch3_matatabot'),
+    midi: () => require('../extensions/scratch3_midi'),
+    spikePrime: () => require('../extensions/scratch3_spike_prime'),
+    futureBoard: () => require('../extensions/scratch3_future_board'),
+    minecraft: () => require('../extensions/scratch3_minecraft'),
+    toolbox: () => require('../extensions/scratch3_toolbox'),
+    iCarPro: () => require('../extensions/scratch3_icar_pro'),
+    snapCircuitsU33: () => require('../extensions/scratch3_snap_circuits_u33'),
+    magicBlueUU: () => require('../extensions/scratch3_magic_blue_uu'),
+	
+	
 	
 };
 const CORE_EXTENSIONS = [
