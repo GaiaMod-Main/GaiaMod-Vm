@@ -424,6 +424,7 @@ const defaultBuiltinExtensions = {
     impulse: () => require('../extensions/scratchplusplus_impulse'),
     tempvars: () => require('../extensions/scratchplusplus_tempvars'),
 	emo: () => require('../extensions/scratch_emo'),
+	missmixalot: () => require('../extensions/scratch3_missmixalot'),
 	
 	
 	
