@@ -427,6 +427,11 @@ const defaultBuiltinExtensions = {
 	fromzeroai: () => require('../extensions/scratch3_fromzeroai'),
 	missmixalot: () => require('../extensions/scratch3_missmixalot'),
 	
+	//iftttWebhooks: () => require('../extensions/scratch3_iftttWebhooks'),
+	//legomario: () => require('../extensions/scratch3_legomario'),
+	//legoremote: () => require('../extensions/scratch3_legoremote'),
+	//legoble: () => require('../extensions/scratch3_legoble'),
+	
 	
 	
 };
