@@ -86,6 +86,17 @@ class WonderBlocks {
                         }
                     }
                 },
+                 {
+                    opcode: 'changeTheme',
+                    text: 'change theme color: [COLOR]',
+                    blockType: BlockType.COMMAND,
+                    arguments: {
+                        COLOR: {
+                            type: ArgumentType.STRING,
+                            menu: 'COLOR_MENU'
+                        }
+                    }
+                },
 				
             ],
 			 menus: {
@@ -95,6 +106,10 @@ class WonderBlocks {
                 ICON_MENU: {
                     acceptReporters: true,
                     items: ['none', 'success', 'error', 'warning', 'info', 'question']
+                },
+				COLOR_MENU: {
+                    acceptReporters: true,
+                    items: ['Gaia Blue', 'Red', 'Blue', 'Light Blue', 'Lime Green', 'Scratch', 'Magenta', 'Pink', 'Gray Purple', 'Gold', 'Silver', 'Black', 'Nebula', 'Cosmic', 'Mint', 'Cherry', 'Aurora', 'Rainbow', 'NIGHTMARE']
                 }
             }
         };
@@ -134,7 +149,9 @@ async removeUnusedExtensions() {
             timerProgressBar: args.ALERT_TYPE === 'toast'
         });
     }
-
+	changeTheme (args) {
+        document.body.setAttribute("coloraccent", args.COLOR);
+    }
 }
 
 module.exports = WonderBlocks;
