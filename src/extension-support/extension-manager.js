@@ -420,6 +420,10 @@ const defaultBuiltinExtensions = {
     snapCircuitsU33: () => require('../extensions/scratch3_snap_circuits_u33'),
     magicBlueUU: () => require('../extensions/scratch3_magic_blue_uu'),
 	
+	network: () => require('../extensions/scratchplusplus_network'),
+    impulse: () => require('../extensions/scratchplusplus_impulse'),
+    tempvars: () => require('../extensions/scratchplusplus_tempvars'),
+	
 	
 	
 };
