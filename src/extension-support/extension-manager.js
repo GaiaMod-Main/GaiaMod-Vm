@@ -423,7 +423,7 @@ const defaultBuiltinExtensions = {
 	network: () => require('../extensions/scratchplusplus_network'),
     impulse: () => require('../extensions/scratchplusplus_impulse'),
     tempvars: () => require('../extensions/scratchplusplus_tempvars'),
-	fromzeroai: () => require('../extensions/scratch3_fromzeroai'),
+	emo: () => require('../extensions/scratch_emo'),
 	
 	
 	
