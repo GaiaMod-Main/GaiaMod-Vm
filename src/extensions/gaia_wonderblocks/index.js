@@ -109,7 +109,7 @@ class WonderBlocks {
                 },
 				COLOR_MENU: {
                     acceptReporters: true,
-                    items: ['Gaia Blue', 'Red', 'Blue', 'Light Blue', 'Lime Green', 'Scratch', 'Magenta', 'Serene Blue', 'Pink', 'Gray Purple', 'Gold', 'Silver', 'Black', 'Nebula', 'Cosmic', 'Mint', 'Cherry', 'Aurora', 'Rainbow', 'NIGHTMARE']
+                    items: ['Gaia Blue', 'Red', 'Blue', 'Light Blue', 'Lime Green', 'Scratch', 'Magenta', 'Serene Blue', 'Pink', 'Gray Purple', 'Gold', 'Silver', 'Black', 'Nebula', 'Cosmic', 'Mint', 'Cherry', 'Aurora', 'Rainbow', 'Corrupted Blue', 'Partytime', 'NIGHTMARE']
                 }
             }
         };
@@ -149,6 +149,7 @@ async removeUnusedExtensions() {
             timerProgressBar: args.ALERT_TYPE === 'toast'
         });
     }
+	
 	changeTheme (args) {
         document.body.setAttribute("coloraccent", args.COLOR);
     }
