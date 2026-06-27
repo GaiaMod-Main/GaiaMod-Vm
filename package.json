@@ -36,6 +36,7 @@
 	"algosdk": "^1.19.0",
     "arraybuffer-loader": "^1.0.6",
     "atob": "2.1.2",
+	"axios": "^0.21.1",
     "bleat": "^0.1.9",
     "brain-text": "^1.1.30",
     "btoa": "1.2.1",
