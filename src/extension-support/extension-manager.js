@@ -425,9 +425,12 @@ const defaultBuiltinExtensions = {
     tempvars: () => require('../extensions/scratchplusplus_tempvars'),
 	emo: () => require('../extensions/scratch_emo'),
 	missmixalot: () => require('../extensions/scratch3_missmixalot'),
-	
-	
-	
+    
+    cliphttpio: () => require('../extensions/clip_httpio'),
+    clipccjson: () => require('../extensions/clipcc_json'),
+    clipblocks: () => require('../extensions/clipblocks'),
+    libra: () => require('../extensions/scp_libra'),
+		
 };
 const CORE_EXTENSIONS = [
     'argument',
