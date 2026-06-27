@@ -303,7 +303,6 @@ const defaultBuiltinExtensions = {
 	    // snail ide
     snailextras: () => require('../extensions/snail_extras'),
     goofiestExt: () => require('../extensions/scratch3_goofy'),
-    blockly2math: () => require('../extensions/blockly-2/math.js'),
 	
     // GvbvdxxMod2
     beepboxsynth: () => require('../extensions/scratch3_beepbox_synth'),
