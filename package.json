@@ -30,8 +30,6 @@
   },
   "dependencies": {
     "@croquet/croquet": "^0.3.2",
-   "@tensorflow-models/mobilenet": "^2.0.4",
-    "@tensorflow/tfjs": "^1.5.1",
     "@turbowarp/json": "^0.1.2",
     "@vernier/godirect": "1.5.0",
     "ajv": "^8.17.1",
