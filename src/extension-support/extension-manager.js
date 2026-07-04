@@ -377,8 +377,10 @@ const defaultBuiltinExtensions = {
 	cubroidDCMotor: () => require('../extensions/scratch3_cubroid_dc_motor'),
 	cubroidProximity: () => require('../extensions/scratch3_cubroid_proximity'),
 	echidna: () => require('../extensions/scratch3_echidna'),
+	learningMLImages: () => require('../extensions/scratch3_learningml_images'),
+	learningMLNumerical: () => require('../extensions/scratch3_learningml_numerical'),
+	learningMLTexts: () => require('../extensions/scratch3_learningml_texts'),
 	eim: () => require('../extensions/scratch3_eim'),
-	alphamini: () => require('../extensions/scratch3_alphamini'),
 	
 	// Custom extentions
     robot_communication: () => require('../extensions/scratch3_robot_communication'),
