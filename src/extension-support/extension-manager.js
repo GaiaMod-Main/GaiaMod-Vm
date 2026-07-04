@@ -73,6 +73,7 @@ const defaultBuiltinExtensions = {
     //posehand: () => require('../extensions/scratch3_posehand'),
     //objectdetection: () => require('../extensions/scratch3_objectdetection'),
     //teachableMachine: () => require('../extensions/scratch3_teachablemachine'),
+	//iot: () => require('../extensions/scratch3_iot'),
 
     // garbomuffin: *silence*
     // tw: core extension
@@ -374,10 +375,6 @@ const defaultBuiltinExtensions = {
 	axerai: () => require('../extensions/axerai'),
 	tello2: () => require('../extensions/scratch3_tello2'),
 	echidna: () => require('../extensions/scratch3_echidna'),
-	iot: () => require('../extensions/scratch3_iot'),
-	
-	//em_discordrpc: () => require('../extensions/em_discordrpc'),
-
 	
 	// Custom extentions
     robot_communication: () => require('../extensions/scratch3_robot_communication'),
