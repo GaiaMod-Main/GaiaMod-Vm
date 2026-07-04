@@ -35,7 +35,7 @@ jobs:
 
       - name: Make docs
         run: |
-         npm install
+         npm install -g patch-package
          npm audit fix --force
          npm run build
          npm run docs
