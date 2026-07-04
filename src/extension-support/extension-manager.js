@@ -374,7 +374,11 @@ const defaultBuiltinExtensions = {
     onegpioRpiPico: () => require('../extensions/scratch3_onegpioRpiPico'),
 	axerai: () => require('../extensions/axerai'),
 	tello2: () => require('../extensions/scratch3_tello2'),
+	cubroidDCMotor: () => require('../extensions/scratch3_cubroid_dc_motor'),
+	cubroidProximity: () => require('../extensions/scratch3_cubroid_proximity'),
 	echidna: () => require('../extensions/scratch3_echidna'),
+	eim: () => require('../extensions/scratch3_eim'),
+	alphamini: () => require('../extensions/scratch3_alphamini'),
 	
 	// Custom extentions
     robot_communication: () => require('../extensions/scratch3_robot_communication'),
