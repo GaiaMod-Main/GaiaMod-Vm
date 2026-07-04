@@ -380,10 +380,6 @@ const defaultBuiltinExtensions = {
 	eim: () => require('../extensions/scratch3_eim'),
     em_discordrpc: () => require('../extensions/em_discordrpc'),
     lepiBarcodeScan: () => require('../extensions/lepi_barcode_scan'),
-    lepiBalanceCar: () => require('../extensions/lepi_balance_car'),
-    homeassistant: () => require('../extensions/scratch3_homeassistant'),
-    lepiGoogleAI: () => require('../extensions/lepi_google_ai'),
-    lepiSmartClassroom: () => require('../extensions/lepi_smart_classroom'),
 
 	
 	// Custom extentions
