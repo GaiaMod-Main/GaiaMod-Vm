@@ -377,6 +377,7 @@ const defaultBuiltinExtensions = {
 	cubroidDCMotor: () => require('../extensions/scratch3_cubroid_dc_motor'),
 	cubroidProximity: () => require('../extensions/scratch3_cubroid_proximity'),
 	echidna: () => require('../extensions/scratch3_echidna'),
+	reqRep: () => require('../extensions/scratch3_req_rep'),
 	
 	// Custom extentions
     robot_communication: () => require('../extensions/scratch3_robot_communication'),
