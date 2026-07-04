@@ -374,6 +374,8 @@ const defaultBuiltinExtensions = {
     onegpioRpiPico: () => require('../extensions/scratch3_onegpioRpiPico'),
 	axerai: () => require('../extensions/axerai'),
 	tello2: () => require('../extensions/scratch3_tello2'),
+	echidna: () => require('../extensions/scratch3_echidna'),
+	iot: () => require('../extensions/scratch3_iot'),
 	
 	// Custom extentions
     robot_communication: () => require('../extensions/scratch3_robot_communication'),
