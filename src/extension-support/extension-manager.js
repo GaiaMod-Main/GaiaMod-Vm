@@ -378,6 +378,7 @@ const defaultBuiltinExtensions = {
 	cubroidProximity: () => require('../extensions/scratch3_cubroid_proximity'),
 	echidna: () => require('../extensions/scratch3_echidna'),
 	reqRep: () => require('../extensions/scratch3_req_rep'),
+	lepiSmartClassroom: () => require('../extensions/lepi_smart_classroom'),
 	
 	// Custom extentions
     robot_communication: () => require('../extensions/scratch3_robot_communication'),
