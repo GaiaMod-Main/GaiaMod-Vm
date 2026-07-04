@@ -378,6 +378,10 @@ const defaultBuiltinExtensions = {
 	cubroidProximity: () => require('../extensions/scratch3_cubroid_proximity'),
 	echidna: () => require('../extensions/scratch3_echidna'),
 	reqRep: () => require('../extensions/scratch3_req_rep'),
+	shredsdk: () => require('../extensions/shredsdk'),
+	utils: () => require('../extensions/scratch3_utils'),
+    gameutils: () => require('../extensions/scratch3_gameutils'),
+	se: () => require('../extensions/se'),
 	
 	// Custom extentions
     robot_communication: () => require('../extensions/scratch3_robot_communication'),
