@@ -377,10 +377,7 @@ const defaultBuiltinExtensions = {
 	cubroidDCMotor: () => require('../extensions/scratch3_cubroid_dc_motor'),
 	cubroidProximity: () => require('../extensions/scratch3_cubroid_proximity'),
 	echidna: () => require('../extensions/scratch3_echidna'),
-	eim: () => require('../extensions/scratch3_eim'),
-    em_discordrpc: () => require('../extensions/em_discordrpc'),
-    lepiBarcodeScan: () => require('../extensions/lepi_barcode_scan'),
-
+	em_discordrpc: () => require('../extensions/em_discordrpc'),
 	
 	// Custom extentions
     robot_communication: () => require('../extensions/scratch3_robot_communication'),
