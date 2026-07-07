@@ -57,6 +57,7 @@
     "hue-module": "^0.1.2",
     "immutable": "3.8.2",
     "jsdoc": "^4.0.5",
+	"jsqr": "^1.4.0",
     "jszip": "^3.1.5",
     "leaflet": "^1.9.4",
     "localforage": "^1.10.0",
