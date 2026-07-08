@@ -370,6 +370,23 @@ const defaultBuiltinExtensions = {
     brickssensors:() => require('../extensions/bricks_sensors'),
     bricksevent:() => require('../extensions/bricks_event'),
 	matrix:() => require('../extensions/matrix'),
+	
+    fourLeggedBionicSpider: () => require('../extensions/scratch3_spider_robot'),
+    carMotor: () => require('../extensions/scratch_car_motor'),
+    carMotorV2: () => require('../extensions/scratch_car_motorV2'),
+    LordBot: () => require('../extensions/scratch_LordBot'),
+    mechanicalArm: () => require('../extensions/scratch_mechanical_arm'),
+    bipedRobot: () => require('../extensions/scratch_biped_robot'),
+    ASR: () => require('../extensions/scratch_ASR'),
+    meteorologicalStation: () => require('../extensions/scratch_meteorologicalStation'),
+    smartHome: () => require('../extensions/scratch_smart_home'),
+    smartFarm: () => require('../extensions/scratch_smart_farm'),
+    bluetoothController: () => require('../extensions/scratch_bluetooth_controller'),
+    PAW: () => require('../extensions/scratch_PAW'),
+    sharkbot: () => require('../extensions/scratch_sharkbot'),
+    truckbott: () => require('../extensions/scratch_truckbott'),
+    battleCar: () => require('../extensions/scratch_battle_car'),
+    nineInOne: () => require('../extensions/scratch_nine_in_one'),
 
 	
 	playgo: () => require('../extensions/scratch3_playgo'),
