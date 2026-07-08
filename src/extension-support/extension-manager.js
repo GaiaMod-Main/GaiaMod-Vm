@@ -364,29 +364,17 @@ const defaultBuiltinExtensions = {
     sencu: () => require("../extensions/scratch3_sencu"),
     deepseek: () => require("../extensions/deepseek"),
 	
+	newblocks: () => require('../extensions/scratch3_newblocks'),
+    chatgpt: () => require('../extensions/scratch3_chatgpt'),
+    line: () => require('../extensions/scratch3_line'),
+    voicevox: () => require('../extensions/scratch3_voicevox'),
+	
 	bricksmotor:() => require('../extensions/bricks_motor'),
     brickstwomotor:() => require('../extensions/bricks_two_motor'),
     brickslight:() => require('../extensions/bricks_light'),
     brickssensors:() => require('../extensions/bricks_sensors'),
     bricksevent:() => require('../extensions/bricks_event'),
 	matrix:() => require('../extensions/matrix'),
-	
-    fourLeggedBionicSpider: () => require('../extensions/scratch3_spider_robot'),
-    carMotor: () => require('../extensions/scratch_car_motor'),
-    carMotorV2: () => require('../extensions/scratch_car_motorV2'),
-    LordBot: () => require('../extensions/scratch_LordBot'),
-    mechanicalArm: () => require('../extensions/scratch_mechanical_arm'),
-    bipedRobot: () => require('../extensions/scratch_biped_robot'),
-    ASR: () => require('../extensions/scratch_ASR'),
-    meteorologicalStation: () => require('../extensions/scratch_meteorologicalStation'),
-    smartHome: () => require('../extensions/scratch_smart_home'),
-    smartFarm: () => require('../extensions/scratch_smart_farm'),
-    bluetoothController: () => require('../extensions/scratch_bluetooth_controller'),
-    PAW: () => require('../extensions/scratch_PAW'),
-    sharkbot: () => require('../extensions/scratch_sharkbot'),
-    truckbott: () => require('../extensions/scratch_truckbott'),
-    battleCar: () => require('../extensions/scratch_battle_car'),
-    nineInOne: () => require('../extensions/scratch_nine_in_one'),
 
 	
 	playgo: () => require('../extensions/scratch3_playgo'),
@@ -437,6 +425,23 @@ const defaultBuiltinExtensions = {
     clipccjson: () => require('../extensions/clipcc_json'),
     clipblocks: () => require('../extensions/clipblocks'),
     libra: () => require('../extensions/scp_libra'),
+	
+	fourLeggedBionicSpider: () => require('../extensions/scratch3_spider_robot'),
+    carMotor: () => require('../extensions/scratch_car_motor'),
+    carMotorV2: () => require('../extensions/scratch_car_motorV2'),
+    LordBot: () => require('../extensions/scratch_LordBot'),
+    mechanicalArm: () => require('../extensions/scratch_mechanical_arm'),
+    bipedRobot: () => require('../extensions/scratch_biped_robot'),
+    ASR: () => require('../extensions/scratch_ASR'),
+    meteorologicalStation: () => require('../extensions/scratch_meteorologicalStation'),
+    smartHome: () => require('../extensions/scratch_smart_home'),
+    smartFarm: () => require('../extensions/scratch_smart_farm'),
+    bluetoothController: () => require('../extensions/scratch_bluetooth_controller'),
+    PAW: () => require('../extensions/scratch_PAW'),
+    sharkbot: () => require('../extensions/scratch_sharkbot'),
+    truckbott: () => require('../extensions/scratch_truckbott'),
+    battleCar: () => require('../extensions/scratch_battle_car'),
+    nineInOne: () => require('../extensions/scratch_nine_in_one'),
 		
 };
 const CORE_EXTENSIONS = [
